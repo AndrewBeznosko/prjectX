@@ -14,6 +14,7 @@ header .navbar {
 
     .log-in {
         outline: solid 2px #1B2F4A;
+        padding: 5px 14px;
     }
     
     .navbar-left {
@@ -23,6 +24,15 @@ header .navbar {
     }
     
     .navbar-right {
+        
+        a {
+            display: flex;
+            align-items: center;
+            
+            &:hover path {
+                fill:rgb(0,207,122);
+            }
+        }
         
         .nav-item {
         
@@ -46,8 +56,7 @@ header .navbar {
         
         .bell_circle {
             position: relative;
-            right: 4px;
-            bottom: 4px;
+            bottom: 7px;
             vertical-align: super;
             display: inline-block;
             border-radius: 50%;

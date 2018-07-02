@@ -199,32 +199,41 @@ header .navbar .navbar-brand {
 /* line 15, ../sass/_header.scss */
 header .navbar .log-in {
   outline: solid 2px #1B2F4A;
+  padding: 5px 14px;
 }
-/* line 20, ../sass/_header.scss */
+/* line 21, ../sass/_header.scss */
 header .navbar .navbar-left .nav-link {
   margin-right: 20px;
 }
-/* line 29, ../sass/_header.scss */
+/* line 28, ../sass/_header.scss */
+header .navbar .navbar-right a {
+  display: flex;
+  align-items: center;
+}
+/* line 32, ../sass/_header.scss */
+header .navbar .navbar-right a:hover path {
+  fill: #00cf7a;
+}
+/* line 39, ../sass/_header.scss */
 header .navbar .navbar-right .nav-item:not(:first-child) {
   margin-left: 35px;
 }
-/* line 33, ../sass/_header.scss */
+/* line 43, ../sass/_header.scss */
 header .navbar .navbar-right .nav-item:nth-child(2) {
   margin-left: 34px;
 }
-/* line 37, ../sass/_header.scss */
+/* line 47, ../sass/_header.scss */
 header .navbar .navbar-right .nav-item:nth-child(3) {
   margin-left: 36px;
 }
-/* line 41, ../sass/_header.scss */
+/* line 51, ../sass/_header.scss */
 header .navbar .navbar-right .nav-item:nth-child(4) {
   margin-left: 23px;
 }
-/* line 47, ../sass/_header.scss */
+/* line 57, ../sass/_header.scss */
 header .navbar .navbar-right .bell_circle {
   position: relative;
-  right: 4px;
-  bottom: 4px;
+  bottom: 7px;
   vertical-align: super;
   display: inline-block;
   border-radius: 50%;
@@ -232,7 +241,7 @@ header .navbar .navbar-right .bell_circle {
   height: 5px;
   background-color: red;
 }
-/* line 60, ../sass/_header.scss */
+/* line 69, ../sass/_header.scss */
 header .navbar .navbar-nav .nav-link {
   color: #ffffff;
 }
