@@ -148,357 +148,6 @@ header {
 
 /*
 ================================================================================
-|                                   .sec-left                                  |
-================================================================================
-*/
-/* line 109, ../sass/style.scss */
-.sec-left {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-/* line 113, ../sass/style.scss */
-.sec-left .controllers {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-/* line 117, ../sass/style.scss */
-.sec-left .list {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  overflow: auto;
-  margin: 10px 0;
-}
-/* line 122, ../sass/style.scss */
-.sec-left .list .item {
-  padding: 10px 0 13px;
-  margin: 5px 20px;
-  border-bottom: solid 3px #1B2F4A;
-}
-/* line 127, ../sass/style.scss */
-.sec-left .list .item:last-of-type {
-  border-color: transparent;
-}
-/* line 131, ../sass/style.scss */
-.sec-left .list .item .top {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  align-items: center;
-  margin-bottom: 10px;
-}
-/* line 138, ../sass/style.scss */
-.sec-left .list .item .bottom {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  align-items: center;
-}
-/* line 144, ../sass/style.scss */
-.sec-left .list .item .currency {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  align-items: center;
-}
-/* line 148, ../sass/style.scss */
-.sec-left .list .item .currency img {
-  margin-right: 5px;
-}
-/* line 152, ../sass/style.scss */
-.sec-left .list .item .currency span {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-/* line 159, ../sass/style.scss */
-.sec-left .list .item .percent {
-  color: #00CF7A;
-}
-/* line 163, ../sass/style.scss */
-.sec-left .list .item.red .percent {
-  color: #FF4B4B;
-}
-/* line 169, ../sass/style.scss */
-.sec-left .select-money {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  justify-content: space-around;
-  padding: 0 10px;
-  outline: solid 3px #1B2F4A;
-}
-/* line 175, ../sass/style.scss */
-.sec-left .select-money .item {
-  padding: 15px 5px;
-  border-bottom: solid 3px transparent;
-  margin-bottom: -3px;
-  color: #395C86;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  cursor: pointer;
-  z-index: 1;
-}
-/* line 186, ../sass/style.scss */
-.sec-left .select-money .item:hover {
-  color: rgba(53, 125, 221, 0.7);
-  border-color: rgba(53, 125, 221, 0.5);
-}
-/* line 192, ../sass/style.scss */
-.sec-left .select-money .item.selected {
-  color: #357DDD;
-  border-color: #357DDD;
-}
-/* line 198, ../sass/style.scss */
-.sec-left .searh-and-sortable {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  outline: solid 3px #1B2F4A;
-  margin-top: 3px;
-}
-/* line 204, ../sass/style.scss */
-.sec-left .sortable {
-  padding: 15px;
-  outline: solid 3px #1B2F4A;
-}
-/* line 208, ../sass/style.scss */
-.sec-left .sortable img {
-  color: #357DDD;
-}
-/* line 213, ../sass/style.scss */
-.sec-left .search {
-  flex-wrap: nowrap;
-}
-/* line 216, ../sass/style.scss */
-.sec-left .search label {
-  padding: 15px;
-}
-/* line 220, ../sass/style.scss */
-.sec-left .search input {
-  background: transparent;
-  border: none;
-  padding: 15px 0;
-  width: 100%;
-}
-/* line 226, ../sass/style.scss */
-.sec-left .search input:focus {
-  outline: none;
-  box-shadow: none;
-}
-/* line 231, ../sass/style.scss */
-.sec-left .search input:focus ~ label {
-  background: red;
-}
-
-/*
-================================================================================
-|                                 .sec-center-3                                |
-================================================================================
-*/
-/* line 244, ../sass/style.scss */
-.sec-center-3 {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-/* line 248, ../sass/style.scss */
-.sec-center-3 .nav-tabs {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  align-items: center;
-  border-bottom: 3px solid #1b2f4a;
-}
-/* line 256, ../sass/style.scss */
-.sec-center-3 .tab-content {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  overflow: auto;
-}
-/* line 261, ../sass/style.scss */
-.sec-center-3 .title {
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: 10px;
-  color: #768FAD;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-/* line 270, ../sass/style.scss */
-.sec-center-3 .table thead th {
-  border-bottom: 3px solid #1b2f4a;
-  border-top: none;
-  background-color: #112137;
-}
-/* line 276, ../sass/style.scss */
-.sec-center-3 .table td,
-.sec-center-3 .table th {
-  padding: .75rem;
-  vertical-align: top;
-  border-top: 1px solid #1b2f4a;
-}
-/* line 283, ../sass/style.scss */
-.sec-center-3 .nav-tabs .nav-item {
-  margin-bottom: 0;
-}
-/* line 287, ../sass/style.scss */
-.sec-center-3 .nav-tabs .nav-link {
-  border: none;
-}
-/* line 292, ../sass/style.scss */
-.sec-center-3 .nav-tabs .nav-item.show .nav-link,
-.sec-center-3 .nav-tabs .nav-link.active {
-  position: relative;
-  color: #495057;
-  background-color: #112137;
-  border-radius: 0;
-  border: none;
-  outline: solid 3px #1b2f4a;
-  z-index: 1;
-}
-/* line 302, ../sass/style.scss */
-.sec-center-3 .nav-tabs .nav-item.show .nav-link::after,
-.sec-center-3 .nav-tabs .nav-link.active::after {
-  content: '';
-  width: 100%;
-  height: 3px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #112137;
-}
-/* line 313, ../sass/style.scss */
-.sec-center-3 .table td,
-.sec-center-3 .table th {
-  vertical-align: middle;
-}
-/* line 318, ../sass/style.scss */
-.sec-center-3 .mCSB_inside > .mCSB_container {
-  margin-right: 0;
-}
-/* line 323, ../sass/style.scss */
-.sec-center-3 tbody tr td {
-  white-space: nowrap;
-  font-size: 0.875rem;
-}
-/* line 328, ../sass/style.scss */
-.sec-center-3 tbody tr .currency {
-  text-align: center;
-}
-/* line 331, ../sass/style.scss */
-.sec-center-3 tbody tr .currency span {
-  display: block;
-  margin-top: 5px;
-  color: #768FAD;
-}
-/* line 339, ../sass/style.scss */
-.sec-center-3 tbody tr .holding span {
-  display: block;
-}
-/* line 343, ../sass/style.scss */
-.sec-center-3 tbody tr .holding span:first-of-type {
-  margin-bottom: 5px;
-  color: #fff;
-}
-/* line 348, ../sass/style.scss */
-.sec-center-3 tbody tr .holding span:last-of-type {
-  color: #768FAD;
-}
-/* line 354, ../sass/style.scss */
-.sec-center-3 tbody tr .price span {
-  display: block;
-}
-/* line 358, ../sass/style.scss */
-.sec-center-3 tbody tr .price span:first-of-type {
-  margin-bottom: 5px;
-  color: #00CF7A;
-}
-/* line 364, ../sass/style.scss */
-.sec-center-3 tbody tr .price span:last-of-type {
-  color: #fff;
-}
-/* line 369, ../sass/style.scss */
-.sec-center-3 tbody tr .notify {
-  text-align: center;
-  padding-right: 30px;
-}
-/* line 376, ../sass/style.scss */
-.sec-center-3 tbody tr.red .price span:first-of-type {
-  color: #FF4B4B;
-}
-/* line 381, ../sass/style.scss */
-.sec-center-3 tbody tr.red .price span:last-of-type img {
-  display: inline-block;
-  transform: rotate(180deg);
-}
-
-/*
-================================================================================
-|                                   .sec-right                                 |
-================================================================================
-*/
-/* line 398, ../sass/style.scss */
-.sec-right {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-/* line 402, ../sass/style.scss */
-.sec-right .top {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-/* line 406, ../sass/style.scss */
-.sec-right .bottom {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-/* line 412, ../sass/style.scss */
-.sec-right .bottom .nav-tabs {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-/* line 416, ../sass/style.scss */
-.sec-right .bottom .tab-content {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  overflow: auto;
-}
-
-/*
-================================================================================
 |                                     HEADER                                   |
 ================================================================================
 */
@@ -518,27 +167,351 @@ header .navbar .log-in {
 
 /*
 ================================================================================
-|                                       SEC-1                                  |
+|                                   .sec-left                                  |
 ================================================================================
 */
-/*
-================================================================================
-|                                       SEC-2                                  |
-================================================================================
-*/
-/*
-================================================================================
-|                                     FOOTER                                   |
-================================================================================
-*/
-/*
-|=================================================|
-|                   RESPONSIVE                    |
-|=================================================|
+/* line 1, ../sass/_sec-left.scss */
+.sec-left {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/* line 5, ../sass/_sec-left.scss */
+.sec-left .controllers {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+/* line 9, ../sass/_sec-left.scss */
+.sec-left .list {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow: auto;
+  margin: 10px 0;
+}
+/* line 14, ../sass/_sec-left.scss */
+.sec-left .list .item {
+  padding: 10px 0 13px;
+  margin: 5px 20px;
+  border-bottom: solid 3px #1B2F4A;
+}
+/* line 19, ../sass/_sec-left.scss */
+.sec-left .list .item:last-of-type {
+  border-color: transparent;
+}
+/* line 23, ../sass/_sec-left.scss */
+.sec-left .list .item .top {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+/* line 30, ../sass/_sec-left.scss */
+.sec-left .list .item .bottom {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 36, ../sass/_sec-left.scss */
+.sec-left .list .item .currency {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  align-items: center;
+}
+/* line 40, ../sass/_sec-left.scss */
+.sec-left .list .item .currency img {
+  margin-right: 5px;
+}
+/* line 44, ../sass/_sec-left.scss */
+.sec-left .list .item .currency span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* line 51, ../sass/_sec-left.scss */
+.sec-left .list .item .percent {
+  color: #00CF7A;
+}
+/* line 55, ../sass/_sec-left.scss */
+.sec-left .list .item.red .percent {
+  color: #FF4B4B;
+}
+/* line 61, ../sass/_sec-left.scss */
+.sec-left .select-money {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10px;
+  outline: solid 3px #1B2F4A;
+}
+/* line 67, ../sass/_sec-left.scss */
+.sec-left .select-money .item {
+  padding: 15px 5px;
+  border-bottom: solid 3px transparent;
+  margin-bottom: -3px;
+  color: #395C86;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 1;
+}
+/* line 78, ../sass/_sec-left.scss */
+.sec-left .select-money .item:hover {
+  color: rgba(53, 125, 221, 0.7);
+  border-color: rgba(53, 125, 221, 0.5);
+}
+/* line 84, ../sass/_sec-left.scss */
+.sec-left .select-money .item.selected {
+  color: #357DDD;
+  border-color: #357DDD;
+}
+/* line 90, ../sass/_sec-left.scss */
+.sec-left .searh-and-sortable {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  outline: solid 3px #1B2F4A;
+  margin-top: 3px;
+}
+/* line 96, ../sass/_sec-left.scss */
+.sec-left .sortable {
+  padding: 15px;
+  outline: solid 3px #1B2F4A;
+}
+/* line 100, ../sass/_sec-left.scss */
+.sec-left .sortable img {
+  color: #357DDD;
+}
+/* line 105, ../sass/_sec-left.scss */
+.sec-left .search {
+  flex-wrap: nowrap;
+}
+/* line 108, ../sass/_sec-left.scss */
+.sec-left .search label {
+  padding: 15px;
+}
+/* line 112, ../sass/_sec-left.scss */
+.sec-left .search input {
+  background: transparent;
+  border: none;
+  padding: 15px 0;
+  width: 100%;
+}
+/* line 118, ../sass/_sec-left.scss */
+.sec-left .search input:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* line 123, ../sass/_sec-left.scss */
+.sec-left .search input:focus ~ label {
+  background: red;
+}
 
+/*
+================================================================================ 
+|                                   .sec-right                                 |
+================================================================================
 */
+/* line 1, ../sass/_sec-right.scss */
+.sec-right {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/* line 5, ../sass/_sec-right.scss */
+.sec-right .top {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+/* line 9, ../sass/_sec-right.scss */
+.sec-right .bottom {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/* line 15, ../sass/_sec-right.scss */
+.sec-right .bottom .nav-tabs {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+/* line 19, ../sass/_sec-right.scss */
+.sec-right .bottom .tab-content {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
 /*
 ================================================================================
-|                                     MY STYLES                                |
+|                                 .sec-center-3                                |
 ================================================================================
 */
+/* line 1, ../sass/_sec-center-3.scss */
+.sec-center-3 {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/* line 5, ../sass/_sec-center-3.scss */
+.sec-center-3 .nav-tabs {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #1b2f4a;
+}
+/* line 13, ../sass/_sec-center-3.scss */
+.sec-center-3 .tab-content {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow: auto;
+}
+/* line 18, ../sass/_sec-center-3.scss */
+.sec-center-3 .title {
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: 10px;
+  color: #768FAD;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+/* line 27, ../sass/_sec-center-3.scss */
+.sec-center-3 .table thead th {
+  border-bottom: 3px solid #1b2f4a;
+  border-top: none;
+  background-color: #112137;
+}
+/* line 33, ../sass/_sec-center-3.scss */
+.sec-center-3 .table td,
+.sec-center-3 .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #1b2f4a;
+}
+/* line 40, ../sass/_sec-center-3.scss */
+.sec-center-3 .nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+/* line 44, ../sass/_sec-center-3.scss */
+.sec-center-3 .nav-tabs .nav-link {
+  border: none;
+}
+/* line 49, ../sass/_sec-center-3.scss */
+.sec-center-3 .nav-tabs .nav-item.show .nav-link,
+.sec-center-3 .nav-tabs .nav-link.active {
+  position: relative;
+  color: #495057;
+  background-color: #112137;
+  border-radius: 0;
+  border: none;
+  outline: solid 3px #1b2f4a;
+  z-index: 1;
+}
+/* line 59, ../sass/_sec-center-3.scss */
+.sec-center-3 .nav-tabs .nav-item.show .nav-link::after,
+.sec-center-3 .nav-tabs .nav-link.active::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #112137;
+}
+/* line 70, ../sass/_sec-center-3.scss */
+.sec-center-3 .table td,
+.sec-center-3 .table th {
+  vertical-align: middle;
+}
+/* line 75, ../sass/_sec-center-3.scss */
+.sec-center-3 .mCSB_inside > .mCSB_container {
+  margin-right: 0;
+}
+/* line 80, ../sass/_sec-center-3.scss */
+.sec-center-3 tbody tr td {
+  white-space: nowrap;
+  font-size: 0.875rem;
+}
+/* line 85, ../sass/_sec-center-3.scss */
+.sec-center-3 tbody tr .currency {
+  text-align: center;
+}
+/* line 88, ../sass/_sec-center-3.scss */
+.sec-center-3 tbody tr .currency span {
+  display: block;
+  margin-top: 5px;
+  color: #768FAD;
+}
+/* line 96, ../sass/_sec-center-3.scss */
+.sec-center-3 tbody tr .holding span {
+  display: block;
+}
+/* line 100, ../sass/_sec-center-3.scss */
+.sec-center-3 tbody tr .holding span:first-of-type {
+  margin-bottom: 5px;
+  color: #fff;
+}
+/* line 105, ../sass/_sec-center-3.scss */
+.sec-center-3 tbody tr .holding span:last-of-type {
+  color: #768FAD;
+}
+/* line 111, ../sass/_sec-center-3.scss */
+.sec-center-3 tbody tr .price span {
+  display: block;
+}
+/* line 115, ../sass/_sec-center-3.scss */
+.sec-center-3 tbody tr .price span:first-of-type {
+  margin-bottom: 5px;
+  color: #00CF7A;
+}
+/* line 121, ../sass/_sec-center-3.scss */
+.sec-center-3 tbody tr .price span:last-of-type {
+  color: #fff;
+}
+/* line 126, ../sass/_sec-center-3.scss */
+.sec-center-3 tbody tr .notify {
+  text-align: center;
+  padding-right: 30px;
+}
+/* line 133, ../sass/_sec-center-3.scss */
+.sec-center-3 tbody tr.red .price span:first-of-type {
+  color: #FF4B4B;
+}
+/* line 138, ../sass/_sec-center-3.scss */
+.sec-center-3 tbody tr.red .price span:last-of-type img {
+  display: inline-block;
+  transform: rotate(180deg);
+}

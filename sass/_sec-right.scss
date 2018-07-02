@@ -1,0 +1,24 @@
+.sec-right {
+    @include d-flex;
+    @include flex-direction(column);
+
+    .top {
+        @include flex(0 1 auto);
+    }
+
+    .bottom {
+        @include flex(1 1 auto);
+
+        @include d-flex;
+        @include flex-direction(column);
+
+        .nav-tabs {
+            @include flex(0 1 auto);
+        }
+
+        .tab-content {
+            @include flex(1 1 auto);
+            overflow: auto;
+        }
+    }
+}

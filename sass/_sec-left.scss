@@ -1,0 +1,128 @@
+.sec-left {
+    @include d-flex;
+    @include flex-direction(column);
+
+    .controllers {
+        @include flex(0 1 auto);
+    }
+
+    .list {
+        @include flex(1 1 auto);
+        overflow: auto;
+        margin: 10px 0;
+
+        .item {
+            padding: 10px 0 13px;
+            margin: 5px 20px;
+            border-bottom: solid 3px #1B2F4A;
+
+            &:last-of-type {
+                border-color: transparent;
+            }
+
+            .top {
+                @include d-flex;
+                @include justify-content(space-between);
+                @include align-items(center);
+                margin-bottom: 10px;
+            }
+
+            .bottom {
+                @include d-flex;
+                @include justify-content(space-between);
+                @include align-items(center); //                font-size: 14px;
+            }
+
+            .currency {
+                @include d-flex;
+                align-items: center;
+
+                img {
+                    margin-right: 5px;
+                }
+
+                span {
+                    //                    font-size: 12px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .percent {
+                color: #00CF7A;
+            }
+
+            &.red .percent {
+                color: #FF4B4B;
+            }
+        }
+    }
+
+    .select-money {
+        @include d-flex;
+        justify-content: space-around;
+        padding: 0 10px;
+        outline: solid 3px #1B2F4A;
+
+        .item {
+            padding: 15px 5px;
+            border-bottom: solid 3px transparent;
+            margin-bottom: -3px;
+            color: #395C86;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            cursor: pointer;
+            z-index: 1;
+
+            &:hover {
+                color: rgba(53, 125, 221, 0.7);
+                border-color: rgba(53, 125, 221, 0.5);
+            }
+        }
+
+        .item.selected {
+            color: #357DDD;
+            border-color: #357DDD;
+        }
+    }
+
+    .searh-and-sortable {
+        @include d-flex;
+        outline: solid 3px #1B2F4A;
+        margin-top: 3px;
+    }
+
+    .sortable {
+        padding: 15px;
+        outline: solid 3px #1B2F4A;
+
+        img {
+            color: #357DDD;
+        }
+    }
+
+    .search {
+        flex-wrap: nowrap;
+
+        label {
+            padding: 15px;
+        }
+
+        input {
+            background: transparent;
+            border: none;
+            padding: 15px 0;
+            width: 100%;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+
+            &:focus ~ label {
+                background: red;
+            }
+        }
+    }
+}
