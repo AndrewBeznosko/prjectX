@@ -485,6 +485,16 @@ header .navbar .navbar-nav .nav-link {
 .sec-right .balance-price-wrapper .total-profit__amount {
   font-size: 1.14285714rem;
 }
+/* line 107, ../sass/_sec-right.scss */
+.sec-right .new-order-wrapper .title {
+  font-size: 0.857142857rem;
+  color: #768fad;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 10px 15px;
+  outline: solid 3px #1B2F4A;
+}
 
 /*
 ================================================================================
