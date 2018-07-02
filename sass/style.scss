@@ -24,6 +24,18 @@
 	font-style: normal;
 }
 
+/*Font Ubuntu Mono */
+@font-face {
+    font-family: 'Ubuntu Mono';
+    src: url('../fonts/UbuntuMono-Regular.eot');
+    src: local('Ubuntu Mono'), local('UbuntuMono-Regular'),
+        url('../fonts/UbuntuMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UbuntuMono-Regular.woff') format('woff'),
+        url('../fonts/UbuntuMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /*
 ================================================================================
@@ -100,7 +112,7 @@ header {
     }
 
     .right {
-        @include flex-basis(32.8%);
+        @include flex-basis(33.5%);
         @include d-flex;
         align-items: stretch;
     }
