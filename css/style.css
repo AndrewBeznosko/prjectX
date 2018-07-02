@@ -392,7 +392,7 @@ header .navbar .navbar-nav .nav-link {
   overflow: auto;
 }
 /* line 25, ../sass/_sec-right.scss */
-.sec-right .balance-wrapper {
+.sec-right .balance-top-side {
   display: -webkit-flex;
   display: -moz-flex;
   display: flex;
@@ -402,7 +402,7 @@ header .navbar .navbar-nav .nav-link {
   justify-content: space-between;
 }
 /* line 30, ../sass/_sec-right.scss */
-.sec-right .balance-wrapper .title {
+.sec-right .balance-top-side .title {
   display: -webkit-flex;
   display: -moz-flex;
   display: flex;
@@ -414,15 +414,76 @@ header .navbar .navbar-nav .nav-link {
   color: #768FAD;
 }
 /* line 38, ../sass/_sec-right.scss */
-.sec-right .balance-wrapper .title img {
+.sec-right .balance-top-side .title img {
   margin-right: 10px;
 }
 /* line 43, ../sass/_sec-right.scss */
-.sec-right .balance-wrapper .btn {
+.sec-right .balance-top-side .btn {
   background-color: #357DDD;
   color: #fff;
   margin: 12px 10px 12px 0;
   border-radius: 0;
+}
+/* line 51, ../sass/_sec-right.scss */
+.sec-right .balance-price-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  margin: 15px 0;
+}
+/* line 56, ../sass/_sec-right.scss */
+.sec-right .balance-price-wrapper > div {
+  width: 50%;
+}
+/* line 60, ../sass/_sec-right.scss */
+.sec-right .balance-price-wrapper .price,
+.sec-right .balance-price-wrapper .total-profit {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  padding-left: 8%;
+}
+/* line 67, ../sass/_sec-right.scss */
+.sec-right .balance-price-wrapper .price span,
+.sec-right .balance-price-wrapper .total-profit span {
+  width: 100%;
+}
+/* line 72, ../sass/_sec-right.scss */
+.sec-right .balance-price-wrapper .price {
+  border-right: solid 3px #1B2F4A;
+}
+/* line 76, ../sass/_sec-right.scss */
+.sec-right .balance-price-wrapper .price span:first-of-type {
+  font-size: 2.57142857rem;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+/* line 82, ../sass/_sec-right.scss */
+.sec-right .balance-price-wrapper .price span:last-of-type {
+  font-size: 1.14285714rem;
+}
+/* line 88, ../sass/_sec-right.scss */
+.sec-right .balance-price-wrapper .total-profit .title {
+  font-size: 0.857142857rem;
+  color: #395C86;
+  line-height: 1.2;
+}
+/* line 94, ../sass/_sec-right.scss */
+.sec-right .balance-price-wrapper .total-profit__price {
+  color: #00cf7a;
+  font-size: 1.14285714rem;
+  font-weight: 700;
+}
+/* line 100, ../sass/_sec-right.scss */
+.sec-right .balance-price-wrapper .total-profit__amount {
+  font-size: 1.14285714rem;
 }
 
 /*

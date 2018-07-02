@@ -22,7 +22,7 @@
         }
     }
     
-    .balance-wrapper {
+    .balance-top-side {
         @include d-flex;
         @include align-items(center);
         @include justify-content(space-between);
@@ -44,7 +44,62 @@
             background-color: #357DDD;
             color: #fff;
             margin: 12px 10px 12px 0; 
-            border-radius: 0;
+            border-radius: 0; 
+        }
+    }
+    
+    .balance-price-wrapper {
+        @include d-flex;
+        @include align-items(flex-start);
+        margin: 15px 0;
+        
+        & > div {
+            width: 50%;
+        }
+        
+        .price,
+        .total-profit {
+            @include d-flex;
+            @include flex-wrap(wrap);
+            @include align-items(flex-start);
+            padding-left: 8%;
+            
+            span {
+                width: 100%;
+            }
+        }
+        
+        .price {
+            border-right: solid 3px #1B2F4A;
+            
+            
+            span:first-of-type {
+                font-size: 2.57142857rem;
+                line-height: 1;
+                margin-bottom: 10px;
+            }
+            
+            span:last-of-type {
+                font-size: 1.14285714rem;
+            }
+        }
+        
+        .total-profit {
+            .title {
+                font-size: 0.857142857rem;
+                color: #395C86;
+                line-height: 1.2;
+            }
+            
+            &__price {
+                color: #00cf7a;
+                font-size: 1.14285714rem;
+                font-weight: 700;
+            }
+            
+            &__amount {
+                font-size: 1.14285714rem;
+            }
         }
     }
 }
