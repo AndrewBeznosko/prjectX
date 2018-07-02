@@ -19,24 +19,24 @@
 |                                 GLOBAL STYLE                                 |
 ================================================================================
 */
-/* line 34, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 html {
   font-size: 14px;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 body {
   background-color: #0C1B2F;
   color: #fff;
   font-size: 14px;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 .main-content {
   outline: solid 3px #1B2F4A;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .sec {
   outline: solid 3px #1B2F4A;
 }
@@ -46,7 +46,7 @@ body {
 |                                   MAIN GRID                                  |
 ================================================================================
 */
-/* line 60, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .main-wrapper {
   display: -webkit-flex;
   display: -moz-flex;
@@ -57,14 +57,14 @@ body {
   height: 100vh;
 }
 
-/* line 66, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 header {
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
 }
 
-/* line 70, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .main-content {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -75,13 +75,13 @@ header {
   align-items: stretch;
 }
 
-/* line 77, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 .sec-left {
   flex-basis: 10.6%;
   overflow: auto;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .sec-center {
   -webkit-flex-basis: 68.9%;
   -ms-flex-basis: 68.9%;
@@ -91,7 +91,7 @@ header {
   display: flex;
   padding: 10px;
 }
-/* line 87, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .sec-center .left {
   -webkit-flex-basis: 66.5%;
   -ms-flex-basis: 66.5%;
@@ -103,13 +103,13 @@ header {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-/* line 92, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .sec-center .left .top {
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
 }
-/* line 96, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .sec-center .left .bottom {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -118,7 +118,7 @@ header {
   display: -moz-flex;
   display: flex;
 }
-/* line 102, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .sec-center .right {
   -webkit-flex-basis: 32.8%;
   -ms-flex-basis: 32.8%;
@@ -128,40 +128,40 @@ header {
   display: flex;
   align-items: stretch;
 }
-/* line 108, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .sec-center .sec {
   margin: 10px;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .sec-center-1 {
   -webkit-flex-basis: 100%;
   -ms-flex-basis: 100%;
   flex-basis: 100%;
 }
 
-/* line 117, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 .sec-center-2 {
   -webkit-flex-basis: 100%;
   -ms-flex-basis: 100%;
   flex-basis: 100%;
 }
 
-/* line 121, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 .sec-center-3 {
   -webkit-flex-basis: 50%;
   -ms-flex-basis: 50%;
   flex-basis: 50%;
 }
 
-/* line 125, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .sec-center-4 {
   -webkit-flex-basis: 50%;
   -ms-flex-basis: 50%;
   flex-basis: 50%;
 }
 
-/* line 129, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 .sec-right {
   -webkit-flex-basis: 20.5%;
   -ms-flex-basis: 20.5%;
@@ -224,7 +224,7 @@ header .navbar .navbar-right .bell_circle {
   height: 5px;
   background-color: red;
 }
-/* line 60, ../sass/_header.scss */
+/* line 33, ../sass/_header.scss */
 header .navbar .navbar-nav .nav-link {
   color: #ffffff;
 }
@@ -308,15 +308,15 @@ header .navbar .navbar-nav .nav-link {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 57, ../sass/_sec-left.scss */
+/* line 51, ../sass/_sec-left.scss */
 .sec-left .list .item .percent {
   color: #00CF7A;
 }
-/* line 61, ../sass/_sec-left.scss */
+/* line 55, ../sass/_sec-left.scss */
 .sec-left .list .item.red .percent {
   color: #FF4B4B;
 }
-/* line 67, ../sass/_sec-left.scss */
+/* line 61, ../sass/_sec-left.scss */
 .sec-left .select-money {
   display: -webkit-flex;
   display: -moz-flex;
@@ -325,7 +325,7 @@ header .navbar .navbar-nav .nav-link {
   padding: 0 10px;
   outline: solid 3px #1B2F4A;
 }
-/* line 73, ../sass/_sec-left.scss */
+/* line 67, ../sass/_sec-left.scss */
 .sec-left .select-money .item {
   padding: 15px 5px;
   border-bottom: solid 3px transparent;
@@ -337,17 +337,17 @@ header .navbar .navbar-nav .nav-link {
   cursor: pointer;
   z-index: 1;
 }
-/* line 84, ../sass/_sec-left.scss */
+/* line 78, ../sass/_sec-left.scss */
 .sec-left .select-money .item:hover {
   color: rgba(53, 125, 221, 0.7);
   border-color: rgba(53, 125, 221, 0.5);
 }
-/* line 90, ../sass/_sec-left.scss */
+/* line 84, ../sass/_sec-left.scss */
 .sec-left .select-money .item.selected {
   color: #357DDD;
   border-color: #357DDD;
 }
-/* line 96, ../sass/_sec-left.scss */
+/* line 90, ../sass/_sec-left.scss */
 .sec-left .searh-and-sortable {
   display: -webkit-flex;
   display: -moz-flex;
@@ -355,37 +355,36 @@ header .navbar .navbar-nav .nav-link {
   outline: solid 3px #1B2F4A;
   margin-top: 3px;
 }
-/* line 102, ../sass/_sec-left.scss */
+/* line 96, ../sass/_sec-left.scss */
 .sec-left .sortable {
   padding: 15px;
   outline: solid 3px #1B2F4A;
 }
-/* line 106, ../sass/_sec-left.scss */
+/* line 100, ../sass/_sec-left.scss */
 .sec-left .sortable img {
   color: #357DDD;
 }
-/* line 111, ../sass/_sec-left.scss */
+/* line 105, ../sass/_sec-left.scss */
 .sec-left .search {
   flex-wrap: nowrap;
 }
-/* line 114, ../sass/_sec-left.scss */
+/* line 108, ../sass/_sec-left.scss */
 .sec-left .search label {
   padding: 15px;
 }
-/* line 118, ../sass/_sec-left.scss */
+/* line 112, ../sass/_sec-left.scss */
 .sec-left .search input {
   background: transparent;
   border: none;
   padding: 15px 0;
   width: 100%;
-  color: #fff;
 }
-/* line 125, ../sass/_sec-left.scss */
+/* line 118, ../sass/_sec-left.scss */
 .sec-left .search input:focus {
   outline: none;
   box-shadow: none;
 }
-/* line 130, ../sass/_sec-left.scss */
+/* line 123, ../sass/_sec-left.scss */
 .sec-left .search input:focus ~ label {
   background: red;
 }
@@ -546,6 +545,162 @@ header .navbar .navbar-nav .nav-link {
   width: 100%;
   padding: 10px 15px;
   outline: solid 3px #1B2F4A;
+  margin: 0;
+  margin-bottom: 3px;
+}
+/* line 119, ../sass/_sec-right.scss */
+.sec-right .new-order-wrapper .nav-tabs {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  border: none;
+  margin-bottom: 3px;
+}
+/* line 125, ../sass/_sec-right.scss */
+.sec-right .new-order-wrapper .nav-link {
+  width: 50%;
+  border-radius: 0;
+  text-align: center;
+  border: none;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 0.857142857rem;
+  color: #395c86;
+  padding: .7rem 1rem;
+  outline: solid 3px #1b2f4a;
+}
+/* line 137, ../sass/_sec-right.scss */
+.sec-right .new-order-wrapper .nav-link.active {
+  background-color: #112137;
+  color: #357ddd;
+  outline: #1b2f4a solid 3px;
+  border: none;
+  position: relative;
+}
+/* line 144, ../sass/_sec-right.scss */
+.sec-right .new-order-wrapper .nav-link.active::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 99.5%;
+  height: 3px;
+  background-color: #112137;
+}
+/* line 157, ../sass/_sec-right.scss */
+.sec-right .new-order-wrapper form {
+  background-color: #112137;
+  padding: 10px 30px;
+}
+/* line 161, ../sass/_sec-right.scss */
+.sec-right .new-order-wrapper form .checkboxes {
+  padding: 0 1rem 1rem;
+}
+/* line 165, ../sass/_sec-right.scss */
+.sec-right .new-order-wrapper form input[type="radio"]:checked + .custom-control-label {
+  color: #fff;
+}
+/* line 169, ../sass/_sec-right.scss */
+.sec-right .new-order-wrapper form .custom-control-label {
+  color: #395c86;
+}
+/* line 173, ../sass/_sec-right.scss */
+.sec-right .new-order-wrapper form .custom-control-label::before {
+  background-color: #324864;
+}
+/* line 177, ../sass/_sec-right.scss */
+.sec-right .new-order-wrapper form .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #357ddd;
+}
+/* line 181, ../sass/_sec-right.scss */
+.sec-right .new-order-wrapper form .btn {
+  width: 100%;
+  text-align: center;
+  background: #00cf7a;
+  color: #ffffff;
+  border-radius: 0;
+}
+/* line 192, ../sass/_sec-right.scss */
+.sec-right .orders-wrapper .title {
+  font-size: 0.857142857rem;
+  color: #768fad;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 10px 15px;
+  outline: solid 3px #1B2F4A;
+  margin: 0;
+  margin-bottom: 3px;
+}
+/* line 206, ../sass/_sec-right.scss */
+.sec-right .bottom .nav-tabs {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #1b2f4a;
+}
+/* line 212, ../sass/_sec-right.scss */
+.sec-right .bottom .table thead th {
+  border-bottom: 3px solid #1b2f4a;
+  border-top: none;
+  background-color: #112137;
+  color: #395C86;
+  font-weight: 500;
+}
+/* line 221, ../sass/_sec-right.scss */
+.sec-right .bottom .table td,
+.sec-right .bottom .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #1b2f4a;
+}
+/* line 228, ../sass/_sec-right.scss */
+.sec-right .bottom .nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+/* line 232, ../sass/_sec-right.scss */
+.sec-right .bottom .nav-tabs .nav-link {
+  border: none;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 0.857142857rem;
+  color: #395c86;
+}
+/* line 239, ../sass/_sec-right.scss */
+.sec-right .bottom .nav-tabs .nav-link.active {
+  color: #357ddd;
+}
+/* line 244, ../sass/_sec-right.scss */
+.sec-right .bottom .nav-tabs .nav-item.show .nav-link,
+.sec-right .bottom .nav-tabs .nav-link.active {
+  position: relative;
+  background-color: #112137;
+  border-radius: 0;
+  border: none;
+  outline: solid 3px #1b2f4a;
+  z-index: 1;
+}
+/* line 253, ../sass/_sec-right.scss */
+.sec-right .bottom .nav-tabs .nav-item.show .nav-link::after,
+.sec-right .bottom .nav-tabs .nav-link.active::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #112137;
+}
+/* line 264, ../sass/_sec-right.scss */
+.sec-right .bottom .table td,
+.sec-right .bottom .table th {
+  vertical-align: middle;
+}
+/* line 269, ../sass/_sec-right.scss */
+.sec-right .bottom .mCSB_inside > .mCSB_container {
+  margin-right: 0;
 }
 
 /*
