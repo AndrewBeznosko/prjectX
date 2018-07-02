@@ -4,17 +4,23 @@
 ================================================================================
 */
 /* line 10, ../sass/style.scss */
+html {
+  font-size: 14px;
+}
+
+/* line 14, ../sass/style.scss */
 body {
   background-color: #0C1B2F;
   color: #fff;
+  font-size: 14px;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
 .main-content {
   outline: solid 3px #1B2F4A;
 }
 
-/* line 19, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 .sec {
   outline: solid 3px #1B2F4A;
 }
@@ -24,7 +30,7 @@ body {
 |                                   MAIN GRID                                  |
 ================================================================================
 */
-/* line 30, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .main-wrapper {
   display: -webkit-flex;
   display: -moz-flex;
@@ -35,14 +41,14 @@ body {
   height: 100vh;
 }
 
-/* line 36, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 header {
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .main-content {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -53,13 +59,13 @@ header {
   align-items: stretch;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 .sec-left {
   flex-basis: 15%;
   overflow: auto;
 }
 
-/* line 52, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .sec-center {
   -webkit-flex-basis: 60%;
   -ms-flex-basis: 60%;
@@ -69,7 +75,7 @@ header {
   display: flex;
   padding: 10px;
 }
-/* line 57, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .sec-center .left {
   -webkit-flex-basis: 70%;
   -ms-flex-basis: 70%;
@@ -81,13 +87,13 @@ header {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-/* line 62, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .sec-center .left .top {
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
 }
-/* line 66, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 .sec-center .left .bottom {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -96,7 +102,7 @@ header {
   display: -moz-flex;
   display: flex;
 }
-/* line 72, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .sec-center .right {
   -webkit-flex-basis: 25%;
   -ms-flex-basis: 25%;
@@ -106,40 +112,40 @@ header {
   display: flex;
   align-items: stretch;
 }
-/* line 78, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .sec-center .sec {
   margin: 10px;
 }
 
-/* line 83, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .sec-center-1 {
   -webkit-flex-basis: 100%;
   -ms-flex-basis: 100%;
   flex-basis: 100%;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .sec-center-2 {
   -webkit-flex-basis: 100%;
   -ms-flex-basis: 100%;
   flex-basis: 100%;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .sec-center-3 {
   -webkit-flex-basis: 50%;
   -ms-flex-basis: 50%;
   flex-basis: 50%;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 .sec-center-4 {
   -webkit-flex-basis: 50%;
   -ms-flex-basis: 50%;
   flex-basis: 50%;
 }
 
-/* line 99, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .sec-right {
   -webkit-flex-basis: 30%;
   -ms-flex-basis: 30%;
@@ -366,6 +372,39 @@ header .navbar .log-in {
   flex: 1 1 auto;
   overflow: auto;
 }
+/* line 25, ../sass/_sec-right.scss */
+.sec-right .balance-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+/* line 30, ../sass/_sec-right.scss */
+.sec-right .balance-wrapper .title {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 15px 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #768FAD;
+}
+/* line 38, ../sass/_sec-right.scss */
+.sec-right .balance-wrapper .title img {
+  margin-right: 10px;
+}
+/* line 43, ../sass/_sec-right.scss */
+.sec-right .balance-wrapper .btn {
+  background-color: #357DDD;
+  color: #fff;
+  margin: 12px 10px 12px 0;
+  border-radius: 0;
+}
 
 /*
 ================================================================================
@@ -418,7 +457,6 @@ header .navbar .log-in {
   background-color: #112137;
   color: #395C86;
   font-weight: 500;
-  font-size: 0.875rem;
 }
 /* line 38, ../sass/_sec-center-3.scss */
 .sec-center-3 .table td,
@@ -469,7 +507,6 @@ header .navbar .log-in {
 /* line 85, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr td {
   white-space: nowrap;
-  font-size: 0.875rem;
 }
 /* line 90, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr .currency {
@@ -573,7 +610,6 @@ header .navbar .log-in {
   background-color: #112137;
   color: #395C86;
   font-weight: 500;
-  font-size: 0.875rem;
 }
 /* line 38, ../sass/_sec-center-4.scss */
 .sec-center-4 .table td,
@@ -620,7 +656,6 @@ header .navbar .log-in {
 /* line 81, ../sass/_sec-center-4.scss */
 .sec-center-4 tbody tr td {
   white-space: nowrap;
-  font-size: 0.875rem;
 }
 /* line 86, ../sass/_sec-center-4.scss */
 .sec-center-4 tbody tr td:nth-of-type(2) {

@@ -21,4 +21,32 @@
             overflow: auto;
         }
     }
+    
+    .balance-wrapper {
+        @include d-flex;
+        @include align-items(center);
+        @include justify-content(space-between);
+        
+        .title {
+            @include d-flex;
+            @include align-items(center);
+            padding: 15px 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #768FAD;
+            
+            img {
+                margin-right: 10px; 
+            }
+        }
+        
+        .btn {
+            background-color: #357DDD;
+            color: #fff;
+            margin: 12px 10px 12px 0; 
+            border-radius: 0;
+        }
+    }
 }
+
+
