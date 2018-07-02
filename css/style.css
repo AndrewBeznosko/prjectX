@@ -185,6 +185,10 @@ header .navbar .navbar-right .bell_circle {
   height: 5px;
   background-color: red;
 }
+/* line 30, ../sass/_header.scss */
+header .navbar .navbar-nav .nav-link {
+  color: #ffffff;
+}
 
 /*
 ================================================================================
