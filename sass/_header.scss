@@ -6,21 +6,48 @@ header .navbar {
     outline: solid 3px #1B2F4A;
 
     .navbar-brand {
-        margin-right: 10%;
+        margin-right: 100px;
+        font-family: "Gotham Pro";
+        font-weight: bold;
+        color: #61768b;
     }
 
     .log-in {
         outline: solid 2px #1B2F4A;
     }
     
+    .navbar-left {
+        .nav-link {
+            margin-right: 20px;
+        }
+    }
+    
     .navbar-right {
-        .nav-item:not(:first-child) {
+        
+        .nav-item {
+        
+        &:not(:first-child) {
             margin-left: 35px;
+        }
+            
+            &:nth-child(2) {
+                margin-left: 34px;
+            }
+            
+            &:nth-child(3) {
+                margin-left: 36px;
+            }
+            
+            &:nth-child(4) {
+                margin-left: 23px;
+            }
+            
         }
         
         .bell_circle {
             position: relative;
             right: 4px;
+            bottom: 4px;
             vertical-align: super;
             display: inline-block;
             border-radius: 50%;

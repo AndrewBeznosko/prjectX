@@ -6,29 +6,37 @@
   font-weight: 500;
   font-style: normal;
 }
+/*Font for HEADER logo */
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro-Bold.eot");
+  src: local("Gotham Pro Bold"), local("GothamPro-Bold"), url("../fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 /*
 ================================================================================
 |                                 GLOBAL STYLE                                 |
 ================================================================================
 */
-/* line 22, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 html {
   font-size: 14px;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 body {
   background-color: #0C1B2F;
   color: #fff;
   font-size: 14px;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .main-content {
   outline: solid 3px #1B2F4A;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .sec {
   outline: solid 3px #1B2F4A;
 }
@@ -38,7 +46,7 @@ body {
 |                                   MAIN GRID                                  |
 ================================================================================
 */
-/* line 48, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .main-wrapper {
   display: -webkit-flex;
   display: -moz-flex;
@@ -49,14 +57,14 @@ body {
   height: 100vh;
 }
 
-/* line 54, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 header {
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .main-content {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -67,13 +75,13 @@ header {
   align-items: stretch;
 }
 
-/* line 65, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .sec-left {
   flex-basis: 15%;
   overflow: auto;
 }
 
-/* line 70, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .sec-center {
   -webkit-flex-basis: 60%;
   -ms-flex-basis: 60%;
@@ -83,7 +91,7 @@ header {
   display: flex;
   padding: 10px;
 }
-/* line 75, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 .sec-center .left {
   -webkit-flex-basis: 70%;
   -ms-flex-basis: 70%;
@@ -95,13 +103,13 @@ header {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-/* line 80, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .sec-center .left .top {
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
 }
-/* line 84, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .sec-center .left .bottom {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -110,7 +118,7 @@ header {
   display: -moz-flex;
   display: flex;
 }
-/* line 90, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .sec-center .right {
   -webkit-flex-basis: 25%;
   -ms-flex-basis: 25%;
@@ -120,40 +128,40 @@ header {
   display: flex;
   align-items: stretch;
 }
-/* line 96, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 .sec-center .sec {
   margin: 10px;
 }
 
-/* line 101, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .sec-center-1 {
   -webkit-flex-basis: 100%;
   -ms-flex-basis: 100%;
   flex-basis: 100%;
 }
 
-/* line 105, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 .sec-center-2 {
   -webkit-flex-basis: 100%;
   -ms-flex-basis: 100%;
   flex-basis: 100%;
 }
 
-/* line 109, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 .sec-center-3 {
   -webkit-flex-basis: 50%;
   -ms-flex-basis: 50%;
   flex-basis: 50%;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .sec-center-4 {
   -webkit-flex-basis: 50%;
   -ms-flex-basis: 50%;
   flex-basis: 50%;
 }
 
-/* line 117, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .sec-right {
   -webkit-flex-basis: 30%;
   -ms-flex-basis: 30%;
@@ -175,20 +183,40 @@ header .navbar {
 }
 /* line 8, ../sass/_header.scss */
 header .navbar .navbar-brand {
-  margin-right: 10%;
+  margin-right: 100px;
+  font-family: "Gotham Pro";
+  font-weight: bold;
+  color: #61768b;
 }
-/* line 12, ../sass/_header.scss */
+/* line 15, ../sass/_header.scss */
 header .navbar .log-in {
   outline: solid 2px #1B2F4A;
 }
-/* line 17, ../sass/_header.scss */
+/* line 20, ../sass/_header.scss */
+header .navbar .navbar-left .nav-link {
+  margin-right: 20px;
+}
+/* line 29, ../sass/_header.scss */
 header .navbar .navbar-right .nav-item:not(:first-child) {
   margin-left: 35px;
 }
-/* line 21, ../sass/_header.scss */
+/* line 33, ../sass/_header.scss */
+header .navbar .navbar-right .nav-item:nth-child(2) {
+  margin-left: 34px;
+}
+/* line 37, ../sass/_header.scss */
+header .navbar .navbar-right .nav-item:nth-child(3) {
+  margin-left: 36px;
+}
+/* line 41, ../sass/_header.scss */
+header .navbar .navbar-right .nav-item:nth-child(4) {
+  margin-left: 23px;
+}
+/* line 47, ../sass/_header.scss */
 header .navbar .navbar-right .bell_circle {
   position: relative;
   right: 4px;
+  bottom: 4px;
   vertical-align: super;
   display: inline-block;
   border-radius: 50%;
@@ -196,7 +224,7 @@ header .navbar .navbar-right .bell_circle {
   height: 5px;
   background-color: red;
 }
-/* line 33, ../sass/_header.scss */
+/* line 60, ../sass/_header.scss */
 header .navbar .navbar-nav .nav-link {
   color: #ffffff;
 }
