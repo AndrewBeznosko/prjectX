@@ -1,12 +1,12 @@
-.sec-center-3 {
+.sec-center-4 {
     @include d-flex;
     @include flex-direction(column);
     
     nav {
         @include flex(0 1 auto);
     }
-
-    .tab-content {
+    
+    .table-wrapper {
         @include flex(1 1 auto);
         overflow: auto;
     }
@@ -16,7 +16,7 @@
         align-items: center;
         border-bottom: 3px solid #1b2f4a;
     }
-
+    
     .title {
         margin-right: auto;
         margin-bottom: 0;
@@ -25,7 +25,7 @@
         font-size: 16px;
         text-transform: uppercase;
     }
-
+    
     .table thead th {
         border-bottom: 3px solid #1b2f4a;
         border-top: none;
@@ -77,75 +77,19 @@
         vertical-align: middle;
     }
     
-    .mCSB_inside > .mCSB_container {
-        margin-right: 0;
-    }
-    
     tbody tr {
         td {
             white-space: nowrap;
-            font-size: 0.875rem;
+            font-size: 0.875rem; 
         }
-
-        .currency {
-            text-align: center;
-
-            span {
-                display: block;
-                margin-top: 5px;
-                color: #768FAD;
-            }
-        }
-
-        .holding {
-            span {
-                display: block;
-            }
-
-            span:first-of-type {
-                margin-bottom: 5px;
-                color: #fff;
-            }
-
-            span:last-of-type {
-                color: #768FAD;
-            }
-        }
-
-        .price {
-            span {
-                display: block;
-            }
-
-            span:first-of-type {
-                margin-bottom: 5px;
-                color: #00CF7A;
-
-            }
-
-            span:last-of-type {
-                color: #fff;
-            }
-        }
-
-        .notify {
-            text-align: center;
-            padding-right: 30px;
-        }
-
-        &.red {
-            .price {
-                span:first-of-type {
-                    color: #FF4B4B;
-                }
-                
-                span:last-of-type {
-                    img {
-                        display: inline-block;
-                        transform: rotate(180deg);
-                    }
-                }
-            }
+        
+        td:nth-of-type(2) {
+            color: #00CF7A;
         }
     }
+    
+    .mCSB_inside > .mCSB_container {
+        margin-right: 0;
+    }
 }
+
