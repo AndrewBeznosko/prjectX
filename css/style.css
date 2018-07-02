@@ -170,6 +170,21 @@ header .navbar .navbar-brand {
 header .navbar .log-in {
   outline: solid 2px #1B2F4A;
 }
+/* line 14, ../sass/_header.scss */
+header .navbar .navbar-right .nav-item:not(:first-child) {
+  margin-left: 35px;
+}
+/* line 18, ../sass/_header.scss */
+header .navbar .navbar-right .bell_circle {
+  position: relative;
+  right: 4px;
+  vertical-align: super;
+  display: inline-block;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+}
 
 /*
 ================================================================================
