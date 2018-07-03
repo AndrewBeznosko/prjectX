@@ -14,13 +14,13 @@
     .nav-tabs {
         @include d-flex;
         align-items: center;
-        border-bottom: 3px solid #1b2f4a;
+        border-bottom: 3px solid #1b2f4a; 
     }
 
     .title {
         margin-right: auto;
         margin-bottom: 0;
-        margin-left: 10px;
+        margin-left: 10px; 
         color: #768FAD;
         font-size: 0.857142857rem;
         text-transform: uppercase;
