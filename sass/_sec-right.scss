@@ -34,17 +34,23 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             color: #768FAD;
+            font-size: 0.85rem;
 
-            img {
-                margin-right: 10px;
+            svg {
+                margin-right: 13px;
             }
         }
 
         .btn {
             background-color: #357DDD;
             color: #fff;
-            margin: 12px 10px 12px 0;
-            border-radius: 0;
+            margin: 15px 6px 12px 0;
+            border-radius: 2px;
+            padding: 3px 14px;
+                
+                &:last-child{
+                    margin-right: 12px;
+                    }
         }
     }
 
@@ -53,35 +59,36 @@
         @include align-items(flex-start);
         margin: 15px 0;
 
-        & > div {
-            width: 50%;
-        }
+       
 
         .price,
         .total-profit {
             @include d-flex;
             @include flex-wrap(wrap);
             @include align-items(flex-start);
-            padding-left: 8%;
+            padding-left: 5%;
 
             span {
                 width: 100%;
+                font-family: 'Ubuntu Mono';
             }
         }
+        
 
         .price {
+            padding: 0 3.5% 0 2%;
             border-right: solid 3px #1B2F4A;
 
 
             span:first-of-type {
                 font-size: 2.57142857rem;
                 line-height: 1;
-                margin-bottom: 10px;
+                margin-bottom: 5px;
                 font-family: 'Ubuntu Mono';
             }
 
             span:last-of-type {
-                font-size: 1.14285714rem;
+                font-size: 1.14285714rem;  //1.14285714rem
             }
         }
 
@@ -90,6 +97,7 @@
                 font-size: 0.857142857rem;
                 color: #395C86;
                 line-height: 1.2;
+                margin-bottom: 0;
             }
 
             &__price {
@@ -100,6 +108,7 @@
 
             &__amount {
                 font-size: 1.14285714rem;
+                font-weight: 400;
             }
         }
     }
@@ -165,6 +174,19 @@
 
             input[type="radio"]:checked + .custom-control-label {
                 color: #fff;
+            }
+            
+            input[type="number"] {
+                background-color: #1b2f4a;
+                border: none;
+            }
+            
+            .input-group {
+                border: 2px solid #2c496c;
+                
+                .custom-input-group-append {
+                    background-color: #101e32;
+                }
             }
 
             .custom-control-label {
