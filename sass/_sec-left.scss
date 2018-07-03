@@ -11,6 +11,14 @@
         overflow: auto;
         margin: 10px 0;
         
+        .checked .bookmark path { 
+          fill:  #357ddd;        
+        }
+        
+        .bookmark:hover {
+            cursor: pointer;
+        }
+        
 
         .item {
             
