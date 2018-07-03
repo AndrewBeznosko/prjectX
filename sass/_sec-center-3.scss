@@ -9,6 +9,10 @@
     .tab-content {
         @include flex(1 1 auto);
         overflow: auto;
+        
+        .checked .bell_wrapp path {
+            fill:#357ddd;
+        }
     }
     
     .nav-tabs {
@@ -89,6 +93,10 @@
 
         .currency {
             text-align: center;
+            
+            path {
+                fill:#768fad;
+            }
 
             span {
                 display: block;
@@ -131,6 +139,10 @@
         .notify {
             text-align: center;
             padding-right: 30px;
+            
+            .bell_wrapp:hover {
+                cursor: pointer;
+            }
         }
 
         &.red {

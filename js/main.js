@@ -17,5 +17,17 @@ $(document).ready(function () {
        });
         
     });
+    
+    /* sec-center bell check */
+    $(".bell_wrapp").each(function() {
+       $(this).click(function() {
+           if($(this).parents("tr").hasClass("checked")) {
+               $(this).parents("tr").removeClass("checked");
+           } else 
+          $(this).parents("tr").addClass("checked");
+           
+       });
+        
+    });
 
 });
