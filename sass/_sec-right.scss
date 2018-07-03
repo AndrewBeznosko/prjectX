@@ -157,7 +157,7 @@
 
         form {
             background-color: #112137;
-            padding: 10px 30px;
+            padding: 15px;
 
             .checkboxes {
                 padding: 0 1rem 1rem;
@@ -186,6 +186,19 @@
                 color: #ffffff;
                 border-radius: 0;
             }
+            
+            .total-amount {
+                @include d-flex; 
+                @include align-items(center);
+                
+                .title {
+                    outline: none;
+                }
+                
+                .price {
+                    white-space: nowrap;
+                }
+            }
         }
     }
 
@@ -200,6 +213,11 @@
             outline: solid 3px #1B2F4A;
             margin: 0;
             margin-bottom: 3px;
+        }
+        
+        .price {
+            white-space: nowrap;
+            padding-right: 10px;
         }
     }
 

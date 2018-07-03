@@ -618,7 +618,7 @@ header .navbar .navbar-nav .nav-link {
 /* line 158, ../sass/_sec-right.scss */
 .sec-right .new-order-wrapper form {
   background-color: #112137;
-  padding: 10px 30px;
+  padding: 15px;
 }
 /* line 162, ../sass/_sec-right.scss */
 .sec-right .new-order-wrapper form .checkboxes {
@@ -648,7 +648,23 @@ header .navbar .navbar-nav .nav-link {
   color: #ffffff;
   border-radius: 0;
 }
-/* line 193, ../sass/_sec-right.scss */
+/* line 190, ../sass/_sec-right.scss */
+.sec-right .new-order-wrapper form .total-amount {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 194, ../sass/_sec-right.scss */
+.sec-right .new-order-wrapper form .total-amount .title {
+  outline: none;
+}
+/* line 198, ../sass/_sec-right.scss */
+.sec-right .new-order-wrapper form .total-amount .price {
+  white-space: nowrap;
+}
+/* line 206, ../sass/_sec-right.scss */
 .sec-right .orders-wrapper .title {
   font-size: 0.857142857rem;
   color: #768fad;
@@ -660,7 +676,12 @@ header .navbar .navbar-nav .nav-link {
   margin: 0;
   margin-bottom: 3px;
 }
-/* line 207, ../sass/_sec-right.scss */
+/* line 218, ../sass/_sec-right.scss */
+.sec-right .orders-wrapper .price {
+  white-space: nowrap;
+  padding-right: 10px;
+}
+/* line 225, ../sass/_sec-right.scss */
 .sec-right .bottom .nav-tabs {
   display: -webkit-flex;
   display: -moz-flex;
@@ -668,7 +689,7 @@ header .navbar .navbar-nav .nav-link {
   align-items: center;
   border-bottom: 3px solid #1b2f4a;
 }
-/* line 213, ../sass/_sec-right.scss */
+/* line 231, ../sass/_sec-right.scss */
 .sec-right .bottom .table thead th {
   border-bottom: 3px solid #1b2f4a;
   border-top: none;
@@ -676,18 +697,18 @@ header .navbar .navbar-nav .nav-link {
   color: #395C86;
   font-weight: 500;
 }
-/* line 222, ../sass/_sec-right.scss */
+/* line 240, ../sass/_sec-right.scss */
 .sec-right .bottom .table td,
 .sec-right .bottom .table th {
   padding: .75rem;
   vertical-align: top;
   border-top: 1px solid #1b2f4a;
 }
-/* line 229, ../sass/_sec-right.scss */
+/* line 247, ../sass/_sec-right.scss */
 .sec-right .bottom .nav-tabs .nav-item {
   margin-bottom: 0;
 }
-/* line 233, ../sass/_sec-right.scss */
+/* line 251, ../sass/_sec-right.scss */
 .sec-right .bottom .nav-tabs .nav-link {
   border: none;
   font-family: 'Montserrat';
@@ -695,11 +716,11 @@ header .navbar .navbar-nav .nav-link {
   font-size: 0.857142857rem;
   color: #395c86;
 }
-/* line 240, ../sass/_sec-right.scss */
+/* line 258, ../sass/_sec-right.scss */
 .sec-right .bottom .nav-tabs .nav-link.active {
   color: #357ddd;
 }
-/* line 245, ../sass/_sec-right.scss */
+/* line 263, ../sass/_sec-right.scss */
 .sec-right .bottom .nav-tabs .nav-item.show .nav-link,
 .sec-right .bottom .nav-tabs .nav-link.active {
   position: relative;
@@ -709,7 +730,7 @@ header .navbar .navbar-nav .nav-link {
   outline: solid 3px #1b2f4a;
   z-index: 1;
 }
-/* line 254, ../sass/_sec-right.scss */
+/* line 272, ../sass/_sec-right.scss */
 .sec-right .bottom .nav-tabs .nav-item.show .nav-link::after,
 .sec-right .bottom .nav-tabs .nav-link.active::after {
   content: '';
@@ -720,20 +741,20 @@ header .navbar .navbar-nav .nav-link {
   left: 0;
   background-color: #112137;
 }
-/* line 265, ../sass/_sec-right.scss */
+/* line 283, ../sass/_sec-right.scss */
 .sec-right .bottom .table td,
 .sec-right .bottom .table th {
   vertical-align: middle;
 }
-/* line 270, ../sass/_sec-right.scss */
+/* line 288, ../sass/_sec-right.scss */
 .sec-right .bottom .mCSB_inside > .mCSB_container {
   margin-right: 10px;
 }
-/* line 274, ../sass/_sec-right.scss */
+/* line 292, ../sass/_sec-right.scss */
 .sec-right .bottom td.type {
   color: #00cf7a;
 }
-/* line 277, ../sass/_sec-right.scss */
+/* line 295, ../sass/_sec-right.scss */
 .sec-right .bottom td.type.red {
   color: #ff4b4b;
 }

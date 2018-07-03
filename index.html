@@ -75,13 +75,13 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-<!--                            <img src="img/bell.svg" alt="">-->
-                           <svg width="16" height="20">
+                                <!--                            <img src="img/bell.svg" alt="">-->
+                                <svg width="16" height="20">
                                 <g clip-path="url(#clip_0)">
                                     <path fill="#357ddd" stroke="none" transform="matrix(0.97 0 0 0.97 0.241089 0.557001)" d="M13.5882 8.18125L13.5882 13.475L15.4 15.4L15.4 16.3625L0 16.3625L0 15.4L1.81176 13.475L1.81176 8.18125C1.81176 5.1975 3.71412 2.79125 6.34118 2.1175L6.34118 1.44375C6.34118 0.67375 6.97529 0 7.7 0C8.42471 0 9.05882 0.67375 9.05882 1.44375L9.05882 2.1175C11.6859 2.79125 13.5882 5.1975 13.5882 8.18125ZM9.51176 17.325C9.51176 18.3838 8.69647 19.25 7.7 19.25C6.70353 19.25 5.88824 18.3838 5.88824 17.325L9.51176 17.325Z" fill-rule="evenodd"/>
                                 </g>
                            </svg>
-                            <span class="bell_circle"></span>
+                                <span class="bell_circle"></span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -757,20 +757,41 @@
                                     </div>
 
                                     <div class="form-group row">
-                                        <label for="newOrderAmount" class="col-sm-2 col-form-label">Amount</label>
-                                        <div class="col-sm-10">
-                                            <input type="number" class="form-control" id="newOrderAmount" placeholder="Amount">
+                                        <label for="newOrderAmount" class="col-sm-3 col-form-label">Amount</label>
+                                        <div class="col-sm-9">
+                                            <div class="input-group">
+                                                <input type="number" class="form-control" id="newOrderAmount" placeholder="Amount" aria-label="Amount (to the nearest dollar)">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">BTC</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <label for="newOrderPrice" class="col-sm-2 col-form-label">Price</label>
-                                        <div class="col-sm-10">
-                                            <input type="password" class="form-control" id="newOrderPrice" placeholder="Price">
+                                    <div class="form-group row mb-1">
+                                        <label for="newOrderPrice" class="col-sm-3 col-form-label">Price</label>
+                                        <div class="col-sm-9">
+                                            <div class="input-group">
+                                                <input type="number" class="form-control" id="newOrderPrice" placeholder="Price" aria-label="Amount (to the nearest dollar)">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">USD</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-3"></div>
+                                        <div class="col-sm-9">
+                                            <div class="total-amount">
+                                                <h5 class="title">Total</h5>
+                                                <div class="price">87 340.6 <span>USD</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="form-group row">
-                                        <div class="col-sm-2"></div>
-                                        <div class="col-sm-10">
+                                        <div class="col-sm-3"></div>
+                                        <div class="col-sm-9">
                                             <button type="submit" class="btn">Place by order</button>
                                         </div>
                                     </div>
@@ -1089,7 +1110,6 @@
         $(".list").mCustomScrollbar({
             theme: "dark-3"
         });
-
     </script>
     <script>
         var ctx = document.getElementById("myChart");
@@ -1119,7 +1139,6 @@
                 }
             }
         });
-
     </script>
 
     <!-- main JS -->
