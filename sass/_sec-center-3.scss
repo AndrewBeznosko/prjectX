@@ -140,9 +140,13 @@
                 }
                 
                 span:last-of-type {
-                    img {
+                    svg {
                         display: inline-block;
                         transform: rotate(180deg);
+                        
+                        path {
+                            fill: #FF4B4B;
+                        }
                     }
                 }
             }

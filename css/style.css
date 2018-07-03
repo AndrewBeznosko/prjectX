@@ -907,9 +907,13 @@ header .navbar .navbar-nav .nav-link {
   color: #FF4B4B;
 }
 /* line 143, ../sass/_sec-center-3.scss */
-.sec-center-3 tbody tr.red .price span:last-of-type img {
+.sec-center-3 tbody tr.red .price span:last-of-type svg {
   display: inline-block;
   transform: rotate(180deg);
+}
+/* line 147, ../sass/_sec-center-3.scss */
+.sec-center-3 tbody tr.red .price span:last-of-type svg path {
+  fill: #FF4B4B;
 }
 
 /*
