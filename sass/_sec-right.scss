@@ -17,7 +17,7 @@
         }
 
         .tab-content {
-            @include flex(1 1 auto);
+            @include flex(1 1 auto); 
             overflow: auto;
         }
     }
@@ -234,7 +234,8 @@
             background-color: #112137;
             color: #395C86;
             font-weight: 500;
-
+            font-size: 0.857142857rem;
+            white-space: nowrap;
         }
 
         .table td,

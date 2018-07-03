@@ -22,7 +22,7 @@
         margin-bottom: 0;
         margin-left: 10px;
         color: #768FAD;
-        font-size: 16px;
+        font-size: 0.857142857rem;
         text-transform: uppercase;
     }
     
@@ -32,7 +32,8 @@
         background-color: #112137;
         color: #395C86;
         font-weight: 500;
-        
+        font-size: 0.857142857rem;
+        white-space: nowrap;
     }
 
     .table td,
