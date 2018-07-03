@@ -94,6 +94,10 @@
     .checkbox-wrapper {
         @include d-flex;
         @include align-items(center);
+        
+        span {
+            color: #395c86;
+        }
 
         input[type=checkbox] {
             height: 0;
@@ -106,7 +110,7 @@
             text-indent: -9999px;
             width: 40px;
             height: 20px;
-            background: grey;
+            background-color: #1b2f4a;
             display: block;
             border-radius: 20px;
             position: relative;
@@ -127,7 +131,7 @@
         }
 
         input:checked + label {
-            background: #bada55;
+            background: #357ddd;
         }
 
         input:checked + label:after {

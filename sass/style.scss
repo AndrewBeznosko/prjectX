@@ -29,7 +29,7 @@
     font-family: 'Ubuntu Mono';
     src: url('../fonts/UbuntuMono-Regular.eot');
     src: local('Ubuntu Mono'), local('UbuntuMono-Regular'),
-        url('../fonts/UbuntuMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UbuntuMono-Regular.eot?#iefix') format('embedded-opentype'), 
         url('../fonts/UbuntuMono-Regular.woff') format('woff'),
         url('../fonts/UbuntuMono-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -45,6 +45,7 @@
 
 html {
     font-size: 14px;
+    font-family: 'Montserrat';
     
 }
 
@@ -52,6 +53,7 @@ body {
     background-color: #0C1B2F;
     color: #fff;
     font-size: 14px;
+    font-family: 'Montserrat';
 }
 
 .main-content {
