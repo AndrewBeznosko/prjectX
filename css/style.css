@@ -779,18 +779,18 @@ header .navbar .navbar-nav .nav-link {
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
 }
-/* line 9, ../sass/_sec-center-3.scss */
+/* line 10, ../sass/_sec-center-3.scss */
 .sec-center-3 .tab-content {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   overflow: auto;
 }
-/* line 13, ../sass/_sec-center-3.scss */
+/* line 14, ../sass/_sec-center-3.scss */
 .sec-center-3 .tab-content .checked .bell_wrapp path {
   fill: #357ddd;
 }
-/* line 18, ../sass/_sec-center-3.scss */
+/* line 19, ../sass/_sec-center-3.scss */
 .sec-center-3 .nav-tabs {
   display: -webkit-flex;
   display: -moz-flex;
@@ -798,7 +798,7 @@ header .navbar .navbar-nav .nav-link {
   align-items: center;
   border-bottom: 3px solid #1b2f4a;
 }
-/* line 24, ../sass/_sec-center-3.scss */
+/* line 25, ../sass/_sec-center-3.scss */
 .sec-center-3 .title {
   margin-right: auto;
   margin-bottom: 0;
@@ -807,7 +807,7 @@ header .navbar .navbar-nav .nav-link {
   font-size: 16px;
   text-transform: uppercase;
 }
-/* line 33, ../sass/_sec-center-3.scss */
+/* line 34, ../sass/_sec-center-3.scss */
 .sec-center-3 .table thead th {
   border-bottom: 3px solid #1b2f4a;
   border-top: none;
@@ -815,22 +815,22 @@ header .navbar .navbar-nav .nav-link {
   color: #395C86;
   font-weight: 500;
 }
-/* line 42, ../sass/_sec-center-3.scss */
+/* line 43, ../sass/_sec-center-3.scss */
 .sec-center-3 .table td,
 .sec-center-3 .table th {
   padding: .75rem;
   vertical-align: top;
   border-top: 1px solid #1b2f4a;
 }
-/* line 49, ../sass/_sec-center-3.scss */
+/* line 50, ../sass/_sec-center-3.scss */
 .sec-center-3 .nav-tabs .nav-item {
   margin-bottom: 0;
 }
-/* line 53, ../sass/_sec-center-3.scss */
+/* line 54, ../sass/_sec-center-3.scss */
 .sec-center-3 .nav-tabs .nav-link {
   border: none;
 }
-/* line 58, ../sass/_sec-center-3.scss */
+/* line 59, ../sass/_sec-center-3.scss */
 .sec-center-3 .nav-tabs .nav-item.show .nav-link,
 .sec-center-3 .nav-tabs .nav-link.active {
   position: relative;
@@ -841,7 +841,7 @@ header .navbar .navbar-nav .nav-link {
   outline: solid 3px #1b2f4a;
   z-index: 1;
 }
-/* line 68, ../sass/_sec-center-3.scss */
+/* line 69, ../sass/_sec-center-3.scss */
 .sec-center-3 .nav-tabs .nav-item.show .nav-link::after,
 .sec-center-3 .nav-tabs .nav-link.active::after {
   content: '';
@@ -853,77 +853,82 @@ header .navbar .navbar-nav .nav-link {
   background-color: #112137;
 }
 /* line 79, ../sass/_sec-center-3.scss */
+.sec-center-3 .nav-tabs .nav-item.show .nav-link path,
+.sec-center-3 .nav-tabs .nav-link.active path {
+  fill: #357ddd;
+}
+/* line 84, ../sass/_sec-center-3.scss */
 .sec-center-3 .table td,
 .sec-center-3 .table th {
   vertical-align: middle;
 }
-/* line 84, ../sass/_sec-center-3.scss */
+/* line 89, ../sass/_sec-center-3.scss */
 .sec-center-3 .mCSB_inside > .mCSB_container {
   margin-right: 0;
 }
-/* line 89, ../sass/_sec-center-3.scss */
+/* line 94, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr td {
   white-space: nowrap;
 }
-/* line 94, ../sass/_sec-center-3.scss */
+/* line 99, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr .currency {
   text-align: center;
 }
-/* line 97, ../sass/_sec-center-3.scss */
+/* line 102, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr .currency path {
   fill: #768fad;
 }
-/* line 101, ../sass/_sec-center-3.scss */
+/* line 106, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr .currency span {
   display: block;
   margin-top: 5px;
   color: #768FAD;
 }
-/* line 109, ../sass/_sec-center-3.scss */
+/* line 114, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr .holding span {
   display: block;
 }
-/* line 113, ../sass/_sec-center-3.scss */
+/* line 118, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr .holding span:first-of-type {
   margin-bottom: 5px;
   color: #fff;
 }
-/* line 118, ../sass/_sec-center-3.scss */
+/* line 123, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr .holding span:last-of-type {
   color: #768FAD;
 }
-/* line 124, ../sass/_sec-center-3.scss */
+/* line 129, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr .price span {
   display: block;
 }
-/* line 128, ../sass/_sec-center-3.scss */
+/* line 133, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr .price span:first-of-type {
   margin-bottom: 5px;
   color: #00CF7A;
 }
-/* line 134, ../sass/_sec-center-3.scss */
+/* line 139, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr .price span:last-of-type {
   color: #fff;
 }
-/* line 139, ../sass/_sec-center-3.scss */
+/* line 144, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr .notify {
   text-align: center;
   padding-right: 30px;
 }
-/* line 143, ../sass/_sec-center-3.scss */
+/* line 148, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr .notify .bell_wrapp:hover {
   cursor: pointer;
 }
-/* line 150, ../sass/_sec-center-3.scss */
+/* line 155, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr.red .price span:first-of-type {
   color: #FF4B4B;
 }
-/* line 155, ../sass/_sec-center-3.scss */
+/* line 160, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr.red .price span:last-of-type svg {
   display: inline-block;
   transform: rotate(180deg);
 }
-/* line 159, ../sass/_sec-center-3.scss */
+/* line 164, ../sass/_sec-center-3.scss */
 .sec-center-3 tbody tr.red .price span:last-of-type svg path {
   fill: #FF4B4B;
 }
