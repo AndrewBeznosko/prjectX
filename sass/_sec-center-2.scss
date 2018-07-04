@@ -8,13 +8,56 @@
 
     .table-wrapper {
         @include flex(1 1 auto);
-        overflow: auto;
+        overflow: hidden; 
     }
 
     .nav-tabs {
         @include d-flex;
         align-items: center;
         border-bottom: 3px solid #1b2f4a; 
+    }
+    
+    tr:hover {
+        background-color: #1B2F4A;
+    }
+    
+    td {
+        text-align: right;
+    }
+    
+    .tbody-green {
+        border: none;
+        
+        tr td:last-of-type {
+            padding-right: 2rem;
+        }
+    }
+    
+    .tbody-red {
+        tr td:first-of-type {
+            color: #FF4B4B;
+        }
+        
+        tr td:last-of-type {
+            padding-right: 2rem;
+        }
+    }
+    
+    tbody.center-text {
+        background-color: #1B2F4A;
+        border: none;
+        margin: .4rem 0;
+        
+        h4 {
+            text-align: center;
+            color: #768FAD;
+            font-size: 1rem; 
+            
+            span {
+                color: #FF4B4B;
+                margin-left: 10px;
+            }
+        }
     }
 
     .title {
@@ -37,9 +80,9 @@
 
     .table td,
     .table th {
-        padding: .75rem;
+        padding: .5rem .75rem;
         vertical-align: top;
-        border-top: 1px solid #1b2f4a;
+        border-top: none;
     }
 
     .nav-tabs .nav-item {
