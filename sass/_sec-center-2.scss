@@ -35,7 +35,7 @@
     
     .tbody-red {
         tr td:first-of-type {
-            color: #FF4B4B;
+            color: #FF4B4B; 
         }
         
         tr td:last-of-type {
@@ -187,4 +187,73 @@
         }
 
     }
+    
+    .center-title {
+        text-align: center;
+        color: #768FAD;
+        font-size: 1rem;
+        font-family: 'SegoeUI';
+        padding: .5rem .75rem;
+        background-color: #1B2F4A;
+        margin: .3rem 0;
+        
+        span {
+                color: #FF4B4B;
+                margin-left: 10px; 
+        }
+    }
+    
+    .b-table {
+        @include d-flex;
+        @include flex-wrap(wrap);
+        
+        .b-row {
+            width: 100%;
+            @include d-flex;
+            text-align: right;
+            padding-right: 15%;
+            
+            &:hover {
+                background-color: #1B2F4A;
+            }
+            
+            span {
+                padding: .5rem .75rem;
+                font-family: 'SegoeUI';
+                overflow: hidden;
+                
+                &:nth-of-type(1) {
+                    width: 35%;
+                }
+                
+                &:nth-of-type(2) {
+                    width: 30%;
+                }
+                
+                &:nth-of-type(3) {
+                    width: 35%;
+                }
+            }
+        }
+        
+        &.top .b-row {
+            span:nth-of-type(1) {
+                color: #FF4B4B;
+            }
+        }
+        
+        &.bottom .b-row {
+            span:nth-of-type(1) {
+                color: #00CF7A;
+            }
+        }
+    }
 } 
+
+
+
+
+
+
+
+
