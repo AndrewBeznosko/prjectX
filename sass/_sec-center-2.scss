@@ -260,7 +260,7 @@
             }
             
             span {
-                padding: .5rem .75rem;
+                padding: .2rem .75rem;
                 font-family: 'SegoeUI';
                 overflow: hidden;
                 z-index: 1;
@@ -277,6 +277,18 @@
                 &:nth-of-type(3) {
                     width: 30%;
                 }
+            }
+            
+            &.best-offer::after {
+                content: 'Best offer';
+                position: absolute;
+                top: 0;
+                right: 101%;
+                padding: .2rem .75rem;
+                background-color: #00CF7A;
+                color: #fff;
+                z-index: 9;
+                display: none;
             }
         }
         
@@ -311,7 +323,7 @@
         .b-progress {
             position: absolute;
             width: 100%;
-            height: 100%;
+            height: 100%; 
             right: 0;
             top: 0;
         }
