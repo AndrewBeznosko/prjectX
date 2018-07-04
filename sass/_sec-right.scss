@@ -167,6 +167,7 @@
         form {
             background-color: #112137;
             padding: 15px;
+            color:#395c86;
 
             .checkboxes {
                 padding: 0 1rem 1rem;
@@ -179,13 +180,25 @@
             input[type="number"] {
                 background-color: #1b2f4a;
                 border: none;
+                color: #fff;
+                
+                &::-moz-placeholder { 
+                color: #768fad;
+            }
+            
+            &::-webkit-input-placeholder { 
+                color: #768fad;
+            }
             }
             
             .input-group {
                 border: 2px solid #2c496c;
                 
-                .custom-input-group-append {
+                &-text {
                     background-color: #101e32;
+                    border: none;
+                    width: 50px;
+                    color:#395c86;
                 }
             }
 
@@ -214,11 +227,20 @@
                 @include align-items(center);
                 
                 .title {
+                    padding-left: 0;
+                    text-transform: none;
                     outline: none;
+                     color:#395c86;
                 }
                 
                 .price {
                     white-space: nowrap;
+                    font-family: 'SegoeUI';
+                    color:#fff;
+                    
+                    span {
+                        color: #768fad;
+                    }
                 }
             }
         }
@@ -317,6 +339,14 @@
             
             &.red {
                 color: #ff4b4b;
+            }
+        }
+        
+        td.close {
+            opacity: 1;
+            
+            &:hover path {
+                fill:#357ddd;
             }
         }
     }
