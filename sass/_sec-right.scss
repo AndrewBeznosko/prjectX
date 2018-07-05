@@ -77,7 +77,7 @@
 
         .price {
             padding: 0 3.5% 0 2%;
-            border-right: solid 3px #1B2F4A;
+            border-right: solid 2px #1B2F4A;
 
 
             span:first-of-type {
@@ -121,9 +121,9 @@
             letter-spacing: 1px;
             width: 100%;
             padding: 10px 15px;
-            outline: solid 3px #1B2F4A;
+            outline: solid 2px #1B2F4A;
             margin: 0;
-            margin-bottom: 3px;
+            margin-bottom: 2px;
         }
 
         .nav-tabs {
@@ -142,12 +142,12 @@
             font-size: 0.857142857rem;
             color: #395c86;
             padding: .7rem 1rem;
-            outline: solid 3px #1b2f4a;
+            outline: solid 2px #1b2f4a;
 
             &.active {
                 background-color: #112137;
                 color: #357ddd;
-                outline: rgb(27, 47, 74) solid 3px;
+                outline: rgb(27, 47, 74) solid 2px;
                 border: none;
                 position: relative;
 
@@ -193,6 +193,7 @@
             
             .input-group {
                 border: 2px solid #2c496c;
+                border-radius: 2px;
                 
                 &-text {
                     background-color: #101e32;
@@ -219,7 +220,7 @@
                 text-align: center;
                 background: #00cf7a;
                 color: #ffffff;
-                border-radius: 0;
+                border-radius: 2px;
             }
             
             .total-amount {
@@ -254,7 +255,7 @@
             letter-spacing: 1px;
             width: 100%;
             padding: 10px 15px;
-            outline: solid 3px #1B2F4A; 
+            outline: solid 2px #1B2F4A; 
             margin: 0;
             margin-bottom: 3px;
         }
@@ -269,11 +270,11 @@
         .nav-tabs {
             @include d-flex;
             align-items: center;
-            border-bottom: 3px solid #1b2f4a;
+            border-bottom: 2px solid #1b2f4a;
         }
 
         .table thead th {
-            border-bottom: 3px solid #1b2f4a;
+            border-bottom: 2px solid #1b2f4a;
             border-top: none;
             background-color: #112137;
             color: #395C86;
@@ -311,7 +312,7 @@
             background-color: #112137;
             border-radius: 0;
             border: none;
-            outline: solid 3px #1b2f4a;
+            outline: solid 2px #1b2f4a;
             z-index: 1;
 
             &::after {

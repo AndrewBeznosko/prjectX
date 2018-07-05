@@ -3,7 +3,7 @@ header .navbar {
     font-weight: 500;
     font-size: 0.93rem;
     background-color: #112137;
-    outline: solid 3px #1B2F4A;
+    outline: solid 2px #1B2F4A;
 
     .navbar-brand {
         margin-right: 100px;
@@ -13,8 +13,10 @@ header .navbar {
     }
 
     .log-in {
-        outline: solid 2px #1B2F4A;
+       //outline: solid 2px #1B2F4A;
+        border: solid 2px #1B2F4A;
         padding: 5px 14px;
+        border-radius: 2px;
     }
     
     .navbar-left {

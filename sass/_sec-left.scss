@@ -28,7 +28,7 @@
             
             padding: 10px 8px 13px;
             margin: 0 7px;
-            border-bottom: solid 2px #1B2F4A;
+            border-bottom: solid 1px #1B2F4A;
 
             &:last-of-type {
                 border-color: transparent;
@@ -78,15 +78,16 @@
         @include d-flex;
         justify-content: space-around;
         padding: 0 10px;
-        outline: solid 3px #1B2F4A;
+        outline: solid 2px #1B2F4A;
+        
 
         .item {
             padding: 15px 5px;
-            border-bottom: solid 3px transparent;
+            border-bottom: solid 2px transparent;
             margin-bottom: -3px;
             color: #395C86;
             font-size: 14px;
-            font-weight: 400;
+            font-weight: 700;
             text-transform: uppercase;
             cursor: pointer;
             z-index: 1;
@@ -105,13 +106,13 @@
 
     .searh-and-sortable {
         @include d-flex;
-        outline: solid 3px #1B2F4A;
-        margin-top: 3px;
+        outline: solid 2px #1B2F4A;
+        margin-top: 2px;
     }
 
     .sortable {
         padding: 15px;
-        outline: solid 3px #1B2F4A;
+        outline: solid 2px #1B2F4A;
 
         img {
             color: #357DDD;

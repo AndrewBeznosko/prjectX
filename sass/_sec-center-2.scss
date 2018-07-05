@@ -1,6 +1,7 @@
 .sec-center-2 {
     @include d-flex;
     @include flex-direction(column);
+    border-radius: 2px;
 
     nav {
         @include flex(0 1 auto);
@@ -14,7 +15,7 @@
     .nav-tabs {
         @include d-flex;
         align-items: center;
-        border-bottom: 3px solid #1b2f4a; 
+        border-bottom: 2px solid #1b2f4a; 
     }
     
     tr:hover {
@@ -70,7 +71,7 @@
     }
 
     .table thead th {
-        border-bottom: 3px solid #1b2f4a;
+        border-bottom: 2px solid #1b2f4a;
         border-top: none;
         background-color: #112137;
         color: #395C86;
@@ -101,7 +102,7 @@
         background-color: #112137;
         border-radius: 0;
         border: none;
-        outline: solid 3px #1b2f4a;
+        outline: solid 2px #1b2f4a;
         z-index: 1;
 
         &::after {
@@ -199,7 +200,7 @@
             @include d-flex;
             padding-right: 15%;
             background-color: #112137;
-            border-bottom: 3px solid #1b2f4a;
+            border-bottom: 2px solid #1b2f4a;
         }
         
         span {
@@ -212,15 +213,18 @@
             text-align: right;
             
             &:nth-of-type(1) {
-                width: 35%;
+                width: 30%;
+                text-align: left;
+                padding-left: 5%;
             }
             
             &:nth-of-type(2) {
-                width: 30%;
+                width: 40%;
+                text-align: center;
             }
             
             &:nth-of-type(3) {
-                width: 35%;
+                width: 30%;
             }
         }
     }
@@ -262,15 +266,16 @@
                 z-index: 1;
                 
                 &:nth-of-type(1) {
-                    width: 35%;
-                }
-                
-                &:nth-of-type(2) {
                     width: 30%;
                 }
                 
+                &:nth-of-type(2) {
+                    width: 40%;
+                    text-align: center;
+                }
+                
                 &:nth-of-type(3) {
-                    width: 35%;
+                    width: 30%;
                 }
             }
         }
