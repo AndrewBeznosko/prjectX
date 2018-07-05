@@ -41,6 +41,10 @@
         font-weight: 500;
         font-size: 0.857142857rem;
         white-space: nowrap;
+        
+        &:first-of-type {
+            padding-left: 15px;
+        }
     }
 
     .table td,
@@ -106,7 +110,8 @@
         }
 
         .currency {
-            text-align: center;
+            text-align: left;
+            padding-left: 15px;
             
             path {
                 fill:#768fad;
