@@ -353,7 +353,7 @@
 
         .nav-tabs .nav-link {
             border: none;
-            font-family: 'Montserrat';
+            font-family: 'Montserrat'; 
             font-weight: 500;
             font-size: 0.857142857rem;
             color: #395c86;
@@ -391,6 +391,10 @@
         .mCSB_inside > .mCSB_container {
             margin-right: 10px;
         }
+        
+        .table th:last-of-type {
+            width: 40px;
+        }
 
         td.type {
             color: #00cf7a;
@@ -402,6 +406,9 @@
 
         td.close {
             opacity: 1;
+            float: inherit;
+            text-align: center;
+            width: 40px;
 
             &:hover path {
                 fill: #357ddd;
@@ -414,7 +421,11 @@
         table-layout: fixed;
         margin-bottom: 0;
     }
-
+    
+    .tbl-header {
+        margin-right: 10px;
+    }
+    
     .tbl-content {
         height: 115px;
         overflow-x: auto;
