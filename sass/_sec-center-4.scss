@@ -8,9 +8,9 @@
     }
 
     .table-wrapper {
-         background-color: #112137;
+        background-color: #112137;
         @include flex(1 1 auto);
-        overflow: auto;
+        overflow: hidden;
     }
 
     .nav-tabs {
@@ -36,6 +36,7 @@
         font-weight: 500;
         font-size: 0.857142857rem;
         white-space: nowrap;
+        text-align: center;
     }
 
     .table td,
@@ -102,5 +103,19 @@
 
     .mCSB_inside > .mCSB_container {
         margin-right: 0;
+    }
+
+
+    table {
+        width: 100%;
+        table-layout: fixed;
+        margin-bottom: 0;
+    }
+
+    .tbl-content {
+        height: 115px;
+        overflow-x: auto;
+        overflow-y: auto; 
+        padding-top: 5px;
     }
 }

@@ -35,5 +35,12 @@ $(document).ready(function () {
        });
         
     });
-
 });
+
+// calculate table height
+$(window).on("load resize ", function() {
+    var jsWrapperReadyHeight = $(".js-wrapper-ready-height").offset().top + $(".js-wrapper-ready-height").outerHeight();
+    var jsTableHeight = $(".js-table-height").offset().top;
+    var jsTableHeight_new = jsWrapperReadyHeight - jsTableHeight;
+    $(".js-table-height").css("height", jsTableHeight_new);
+}).resize();
