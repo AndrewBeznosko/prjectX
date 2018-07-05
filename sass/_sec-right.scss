@@ -18,7 +18,7 @@
 
         .tab-content {
             @include flex(1 1 auto);
-            overflow: auto;
+            overflow: hidden;
         }
     }
 
@@ -342,6 +342,10 @@
             vertical-align: top;
             border-top: 1px solid #1b2f4a;
         }
+        
+        .table tr:first-of-type td {
+            border: none; 
+        }
 
         .nav-tabs .nav-item {
             margin-bottom: 0;
@@ -403,5 +407,18 @@
                 fill: #357ddd;
             }
         }
+    }
+    
+        table {
+        width: 100%;
+        table-layout: fixed;
+        margin-bottom: 0;
+    }
+
+    .tbl-content {
+        height: 115px;
+        overflow-x: auto;
+        overflow-y: auto; 
+        padding: 0;
     }
 }
