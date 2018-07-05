@@ -12,6 +12,12 @@ $(document).ready(function () {
             $(this).addClass("selected").siblings().removeClass("selected");
         });
     });
+    
+    $("#js-left-settings .tab").each(function () {
+        $(this).click(function () {
+            $(this).addClass("selected").siblings().removeClass("selected");
+        });
+    });
     /* sec-left bookmark check */
     $(".bookmark").each(function() {
        $(this).click(function() {
