@@ -6,6 +6,12 @@ $(document).ready(function () {
             $(this).addClass("selected").siblings().removeClass("selected");
         });
     });
+    
+    $("#js-chart_tab .item").each(function () {
+        $(this).click(function () {
+            $(this).addClass("selected").siblings().removeClass("selected");
+        });
+    });
     /* sec-left bookmark check */
     $(".bookmark").each(function() {
        $(this).click(function() {
