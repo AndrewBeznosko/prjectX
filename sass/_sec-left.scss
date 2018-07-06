@@ -77,14 +77,12 @@
     .select-money {
         @include d-flex;
         justify-content: space-around;
-        padding: 0 10px;
-        outline: solid 2px #1B2F4A;
-        
+        padding: 0 10px;        
 
         .item {
             padding: 15px 5px;
             border-bottom: solid 2px transparent;
-            margin-bottom: -3px;
+            margin-bottom: -2px;
             color: #395C86;
             font-size: 14px;
             font-weight: 700;
