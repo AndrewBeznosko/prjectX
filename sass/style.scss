@@ -113,7 +113,7 @@ header {
 .sec-center {
     @include flex-basis(68.9%);
     @include d-flex;
-    padding: 10px;
+    padding: 10px 20px 6px;
 
     .left {
         @include flex-basis(66.5%);
@@ -137,7 +137,7 @@ header {
     }
 
     .sec {
-        margin: 10px;
+        margin: 6px; 
     }
 }
 
