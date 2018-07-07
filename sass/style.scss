@@ -62,6 +62,7 @@ body {
     color: #fff;
     font-size: 14px;
     font-family: 'Montserrat';
+    overflow: hidden;
 }
 
 .main-content {
@@ -92,6 +93,7 @@ body {
     @include d-flex;
     @include flex-direction(column);
     height: 100vh;
+    
 }
 
 header {
@@ -99,8 +101,7 @@ header {
 }
 
 .main-content {
-    @include flex(1 1 auto);
-
+    max-height: calc(100vh - 50px);
     @include d-flex;
     align-items: stretch;
 }

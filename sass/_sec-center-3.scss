@@ -71,7 +71,7 @@
         border: none;
         @include d-flex;
         @include align-items(center);
-        @include align-self(stretch);
+        @include align-self(stretch); 
     }
 
 
