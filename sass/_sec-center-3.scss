@@ -82,18 +82,10 @@
         background-color: #112137;
         border-radius: 0;
         border: none;
-        outline: solid 2px #1b2f4a;
+        border: solid 2px #1b2f4a;
+        margin: -2px;
+        border-bottom: solid 2px #112137;
         z-index: 1;
-
-        &::after {
-            content: '';
-            width: 100%;
-            height: 3px;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #112137;
-        }
         
         path {
             fill: #357ddd;
@@ -207,3 +199,4 @@
         margin: 0;
     }
 }
+

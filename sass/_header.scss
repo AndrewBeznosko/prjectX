@@ -37,7 +37,8 @@ header .navbar {
         }
         
         .nav-item {
-        
+            position: relative;
+            
         &:not(:first-child) {
             margin-left: 35px;
         }
@@ -72,7 +73,39 @@ header .navbar {
         color: #ffffff;
     }
     
-
+    .dropdown {
+        position: relative; 
+        
+        &-menu {
+            background: #ffffff;
+            border: none;
+            border-radius: 2px;
+            box-shadow: 0 0.5rem 1rem rgba(12, 27, 47, .5);
+            left: 50%;
+            transform: translateX(-50%);
+            border: solid 2px #fff;
+            min-width: 0;
+            padding: 0;
+        }
+        
+        &-item {
+            color: #0c1b2f;
+            
+            &:hover {
+                background-color: rgba(12, 27, 47, 0.1);
+            }
+        }
+        
+        &-toggle::after {
+            margin-left: .4rem;
+            margin-bottom: -2px;
+        }
+    }
+    
+    .dropdown-item.active, .dropdown-item:active {
+        color: #ffffff;
+        background-color: #0c1b2f;
+    }
 }
 
 

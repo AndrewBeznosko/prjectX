@@ -190,7 +190,7 @@
     }
     
     .b-table-wrapper {
-        overflow: auto;
+        overflow: hidden;
     }
     
     .b-thead {
@@ -282,13 +282,12 @@
             &.best-offer::after {
                 content: 'Best offer';
                 position: absolute;
-                top: 0;
+                top: 0; 
                 right: 101%;
                 padding: .2rem .75rem;
                 background-color: #00CF7A;
                 color: #fff;
                 z-index: 9;
-                display: none;
             }
         }
         

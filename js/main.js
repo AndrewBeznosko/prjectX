@@ -41,6 +41,16 @@ $(document).ready(function () {
         });
 
     });
+    
+    /* Choose lang */
+    $("#dropdownLang-list .dropdown-item").each(function () {
+        $(this).click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            var getLangName = $(this).text();
+            $(".LangName").text(getLangName);
+        });
+
+    });
 });
 
 // calculate table height

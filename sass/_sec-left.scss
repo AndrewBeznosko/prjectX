@@ -1,6 +1,8 @@
 .sec-left {
     @include d-flex;
     @include flex-direction(column);
+    border-left: none;
+    border-bottom: none;
 
     .controllers {
         @include flex(0 1 auto);
@@ -9,7 +11,7 @@
     .list {
         @include flex(1 1 auto);
         overflow: auto;
-        margin: 10px 0;
+        margin: 2px 0;
         
         .checked .bookmark path { 
           fill:  #357ddd;        
@@ -24,6 +26,8 @@
             
             &:hover {
                 background-color: #2c496c;
+                @include border-radius(2px);
+                border-color: transparent !important;
             }
             
             padding: 10px 8px 13px;
@@ -38,14 +42,15 @@
                 @include d-flex;
                 @include justify-content(space-between);
                 @include align-items(center);
-                margin-bottom: 10px;
+                margin-bottom: 15px;
             }
 
             .bottom {
                 @include d-flex;
                 @include justify-content(space-between);
-                @include align-items(center); //                font-size: 14px;
+                @include align-items(center);
                 font-family: "SegoeUI";
+                line-height: 1;
             }
 
             .currency {
@@ -56,11 +61,14 @@
 
                 svg {
                     margin-right: 5px;
+                    width: 20px;
+                    height: 20px;
                 }
 
                 span {
                     text-transform: uppercase;
                     letter-spacing: 1px;
+                    font-size: 0.8571rem;
                 }
             }
 
