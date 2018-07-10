@@ -29,6 +29,33 @@
     .sec-center-2 {
         min-height: 600px;
     }
+    
+    .btns-wrapper {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width:768px) {
+    .sec-left {
+        @include flex-basis(35%);
+    }
+
+    .sec-right {
+        @include flex-basis(35%);
+    }
+
+    .sec-center .bottom {
+        flex-direction: column;
+    }
+    
+    .sec-center-3 .table tr td:first-of-type, .sec-center-3 .table tr th:first-of-type {
+    width: 25%;
+}
+    
+    .sec-center-4 .table td {
+    text-align: center;
+    }
+        
 }
 
 @media screen and (max-width: 768px) {

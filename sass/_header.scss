@@ -34,7 +34,9 @@ header .navbar {
             &:hover path {
                 fill:rgb(0,207,122);
             }
+        
         }
+        
         
         .nav-item {
             position: relative;
@@ -55,8 +57,13 @@ header .navbar {
                 margin-left: 23px;
             }
             
+            &.show:hover path {
+                fill:rgb(0,207,122);
+            }
+            
         }
         
+    
         .bell_circle {
             position: relative;
             bottom: 7px;
@@ -86,6 +93,17 @@ header .navbar {
             border: solid 2px #fff;
             min-width: 0;
             padding: 0;
+            
+            &::before {
+            content: "";
+            position: absolute;
+            left:50%;
+            top:50%;
+            @include transform(translate(-50%,-50%));
+            width: 150%;
+            height: 150%;
+            z-index: -1;
+        }
         }
         
         &-item {
