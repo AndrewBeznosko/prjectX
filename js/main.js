@@ -12,7 +12,7 @@ $(document).ready(function () {
             $(this).addClass("selected").siblings().removeClass("selected");
         });
     });
-    
+
     $("#js-left-settings .tab").each(function () {
         $(this).click(function () {
             $(this).addClass("selected").siblings().removeClass("selected");
@@ -41,7 +41,7 @@ $(document).ready(function () {
         });
 
     });
-    
+
     /* Choose lang */
     $("#dropdownLang-list .dropdown-item").each(function () {
         $(this).click(function () {
@@ -61,4 +61,14 @@ $(window).on("load resize ", function () {
         var jsTableHeight_new = jsWrapperReadyHeight - jsTableHeight;
         $(this).find(".js-table-height").css("height", jsTableHeight_new);
     });
+
+    if ($(window).width() < 1500 && $(window).width() > 768) {
+        $(".sec-center").mCustomScrollbar({
+            theme: "dark-3",
+            scrollInertia: 200
+        });
+    } else {
+        $(".sec-center").mCustomScrollbar("destroy");
+    }
+
 }).resize();

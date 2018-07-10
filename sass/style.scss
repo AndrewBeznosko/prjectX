@@ -60,7 +60,7 @@ html {
 body {
     background-color: #0C1B2F;
     color: #fff;
-    font-size: 14px;
+    font-size: 14x;
     font-family: 'Montserrat';
     overflow: hidden;
 }
@@ -110,7 +110,7 @@ header {
 .sec-center {
     @include flex-basis(68.9%);
     @include d-flex;
-    padding: 10px 20px 6px;
+    padding: 0.714285714rem 1.42857143rem 0.428571429rem;
 
     .left {
         @include flex-basis(66.5%);
@@ -157,6 +157,7 @@ header {
 .sec-right {
     @include flex-basis(20.5%);
 }
+
 
 
 /*
@@ -233,4 +234,12 @@ header {
 */
 
 @import 'sec-center-4'; 
+
+/*
+================================================================================
+|                                 .responsive                                  |
+================================================================================
+*/
+
+@import 'responsive'; 
 

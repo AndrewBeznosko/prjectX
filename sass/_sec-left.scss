@@ -51,6 +51,7 @@
                 @include align-items(center);
                 font-family: "SegoeUI";
                 line-height: 1;
+                font-size: 1rem;
             }
 
             .currency {
@@ -61,8 +62,8 @@
 
                 svg {
                     margin-right: 5px;
-                    width: 20px;
-                    height: 20px;
+                    width: 1.42857143rem;
+                    height: 1.42857143rem;
                 }
 
                 span {
