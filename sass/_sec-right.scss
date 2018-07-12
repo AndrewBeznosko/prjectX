@@ -38,8 +38,10 @@
             color: #768FAD;
             font-size: 0.85rem;
 
-            svg {
+            .b-icon {
                 margin-right: 13px;
+                color: #768FAD;
+                font-size: 1.1rem;
             }
         }
 
@@ -376,9 +378,14 @@
             float: inherit;
             text-align: center;
             width: 40px;
+            text-shadow: none;
+            
+            .b-icon {
+                color: #2c496c;
+            }
 
-            &:hover path {
-                fill: #357ddd;
+            &:hover .b-icon {
+                color: #357ddd;
             }
         }
     }

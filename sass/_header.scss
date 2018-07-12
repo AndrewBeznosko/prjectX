@@ -26,6 +26,8 @@ header .navbar {
     }
     
     .navbar-right {
+        @include d-flex;
+        @include align-items(center);
         
         a {
             display: flex;
@@ -78,6 +80,23 @@ header .navbar {
     
    .navbar-nav .nav-link {
         color: #ffffff;
+       
+        .b-icon {
+            color: #395c86;
+            font-size: 1.37rem;
+            
+            &.blue {
+                color: #357ddd;
+            }
+        }
+       
+        .b-icon-Sun {
+            font-size: 1.6rem;
+        }
+       
+        &:hover .b-icon {
+            color: #00cf7a;
+        }
     }
     
     .dropdown {
@@ -124,13 +143,4 @@ header .navbar {
         color: #ffffff;
         background-color: #0c1b2f;
     }
-}
-
-
-@media screen and (max-width:992px) {
-
-}
-
-@media screen and (max-width:576px) {
-
 }

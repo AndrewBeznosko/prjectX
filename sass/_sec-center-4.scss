@@ -71,6 +71,11 @@
         @include d-flex;
         @include align-items(center);
         @include align-self(stretch);
+        
+        .b-icon {
+            font-size: 1.27rem;
+            line-height: 1.3rem;
+        }
     }
 
 
@@ -93,6 +98,10 @@
             left: 0;
             background-color: #112137;
         }
+    }
+    
+    .b-icon {
+        color: #357ddd;
     }
 
     .table td,

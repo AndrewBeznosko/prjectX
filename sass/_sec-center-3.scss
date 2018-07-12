@@ -13,8 +13,8 @@
         @include flex(1 1 auto);
         overflow: hidden;
         
-        .checked .bell_wrapp path {
-            fill:#357ddd;
+        .checked .bell_wrapp .b-icon {
+            color:#357ddd;
         }
     }
     
@@ -72,6 +72,12 @@
         @include d-flex;
         @include align-items(center);
         @include align-self(stretch); 
+        
+        .b-icon {
+            font-size: 1.27rem;
+            color: #2c496c;
+            line-height: 1.3rem;
+        }
     }
 
 
@@ -87,8 +93,8 @@
         border-bottom: solid 2px #112137;
         z-index: 1;
         
-        path {
-            fill: #357ddd;
+        .b-icon {
+            color: #357ddd;
         }
     }
     
@@ -107,8 +113,11 @@
         .currency {
             text-align: left;
             
-            path {
-                fill:#768fad;
+            .b-icon {
+                color: #768fad;
+                font-size: 1.27rem;
+                margin-left: 2px;
+                margin-bottom: 5px; 
             }
 
             span {
@@ -146,6 +155,17 @@
             span:last-of-type {
                 color: #fff;
             }
+            
+            .b-icon {
+                font-size: .85rem;
+                color: #00CF7A;
+                @include d-flex;
+                @include align-items(center);
+                
+                &::before {
+                    vertical-align: middle;
+                }
+            }
         }
 
         .notify {
@@ -163,13 +183,9 @@
                 }
                 
                 span:last-of-type {
-                    svg {
-                        display: inline-block;
+                    .b-icon {
                         transform: rotate(180deg);
-                        
-                        path {
-                            fill: #FF4B4B;
-                        }
+                        color: #FF4B4B;
                     }
                 }
             }

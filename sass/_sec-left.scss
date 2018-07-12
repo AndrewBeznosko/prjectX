@@ -13,12 +13,17 @@
         overflow: auto;
         margin: 2px 0;
         
-        .checked .bookmark path { 
-          fill:  #357ddd;        
+        .checked .bookmark .b-icon { 
+          color:  #357ddd;        
         }
         
-        .bookmark:hover {
+        .bookmark {
             cursor: pointer;
+            
+            .b-icon {
+                color: #1b2f4a;
+                font-size: 1rem;
+            }
         }
         
 
@@ -60,8 +65,10 @@
                 font-size: 0.85rem;
                 color: #768fad;
 
-                svg {
-                    margin-right: 5px;
+                .b-icon {
+                    margin-right: 6px;
+                    color: #768fad;
+                    font-size: 1.29rem !important;
                 }
 
                 span {
@@ -113,15 +120,17 @@
         @include d-flex;
         outline: solid 2px #1B2F4A;
         margin-top: 2px;
+        
+        .b-icon {
+            vertical-align: middle;
+            font-size: 1.1rem;
+            color: #2c496c;
+        }
     }
 
     .sortable {
         padding: 15px;
         outline: solid 2px #1B2F4A;
-
-        img {
-            color: #357DDD;
-        }
     }
 
     .search {
