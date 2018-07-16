@@ -1252,7 +1252,7 @@
                           Balance</span>
                         <div class="btns-wrapper">
                             <a href="" class="btn">Deposit</a>
-                            <a href="" class="btn">Withdraw</a>
+                            <a href="" class="btn" data-toggle="modal" data-target="#exampleModal">Withdraw</a>
                         </div>
                     </div>
                     <div class="balance-price-wrapper">
@@ -1631,9 +1631,40 @@
 
 
 
-
-
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Withdraw</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ <style>
+     .modal {
+         color:#000;
+     }
+     
+    .modal-open .main-wrapper {
+          filter: blur(3px);
+      }    
+</style>
+ 
+ <!-- Modal END -->
+  
+   
     <script src="js/jquery-3.1.1.min.js"></script>
 
     <!--     bootstrap.min.js -- Latest compiled and minified JavaScript -->
