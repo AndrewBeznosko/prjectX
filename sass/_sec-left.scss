@@ -2,7 +2,7 @@
     @include d-flex;
     @include flex-direction(column);
     border-left: none;
-    border-bottom: none;
+//    border-bottom: none;
 
     .controllers {
         @include flex(0 1 auto);
