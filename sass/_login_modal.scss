@@ -1,0 +1,46 @@
+.login_modal {
+    
+    
+    .form_wrapper {
+        width: 70%;
+        margin: 0 auto;
+        
+        form {
+          @include d-flex;
+          @include flex-direction(column);
+            
+             input[type="text"] {
+                background-color: #1b2f4a;
+                border: none;
+                color: #fff;
+                border: 2px solid #2c496c;
+                margin-bottom: 1rem;
+
+                &::-moz-placeholder {
+                    color: #768fad;
+                }
+
+                &::-webkit-input-placeholder {
+                    color: #768fad;
+                }
+                
+                &:focus {
+                    transition: none;
+                    border-color: #357ddd;
+                    box-shadow: none;
+                }
+            }
+            
+            .login-btn {
+                background-color: #357ddd;
+                color: #fff;
+                margin-bottom: 1rem;
+            }
+            
+            .form-span__wrapper {
+                @include d-flex;
+                @include justify-content(space-between);
+            }
+        }
+    }
+}
