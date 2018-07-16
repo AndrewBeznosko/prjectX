@@ -1251,7 +1251,7 @@
                         <span class="b-icon-wallet b-icon"></span>
                           Balance</span>
                         <div class="btns-wrapper">
-                            <a href="" class="btn">Deposit</a>
+                            <a href="" class="btn" data-toggle="modal" data-target="#registration_modal">Deposit</a>
                             <a href="" class="btn" data-toggle="modal" data-target="#withdraw_modal">Withdraw</a>
                         </div>
                     </div>
@@ -1688,11 +1688,12 @@
  <!-- Modal Log-in END -->
  
   <!-- Modal Registration -->
-<div class="modal fade login_modal" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade registration_modal" id="registration_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">LOG IN</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+        <h5 class="modal-title" id="exampleModalLabel">I already have an account</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span class="b-icon-close b-icon" aria-hidden="true"></span>
         </button>
@@ -1700,13 +1701,35 @@
       <div class="modal-body">
          <div class="form_wrapper">
               <form action="">
-                  <input class="form-control" type="text" placeholder="Your e-mail">
-                  <input class="form-control" type="text" placeholder="Password">
-                  <button class="btn login-btn" type="submit">Log In</button>
-                  <div class="form-span__wrapper">
-                      <a href="#">Forget password?</a>
-                      <a href="">Registration</a>
+                  <div class="input_wrapper">
+                      <label for="registration-e-mail">E-mail</label>
+                      <input class="form-control" id="registration-e-mail" type="text" placeholder="Your e-mail">
                   </div>
+                  <div class="input_wrapper">
+                      <label for="registration-login">Login</label>
+                      <input class="form-control" id="registration-login" type="text" placeholder="Please, enter your login">
+                  </div>
+                  <div class="input_wrapper">
+                      <label for="registration-confirmation">Confirmation code</label>
+                      <input class="form-control" id="registration-confirmation" type="text" placeholder="Enter received code">
+                  </div>
+                  <div class="input_wrapper">
+                      <label for="registration-password">Password</label>
+                      <input class="form-control" id="registration-password" type="password" placeholder="Password">
+                  </div>
+                  <div class="input_wrapper">
+                      <label for="registration-confirm_password">Confirm password</label>
+                      <input class="form-control" id="registration-confirm_password" type="password" placeholder="Password">
+                  </div>
+                  <div class="input_wrapper">
+                      <label for="registration-transaction">Transaction password</label>
+                      <input class="form-control" id="registration-transaction" type="text" placeholder="6-16 symbols, letters and numbers">
+                  </div>
+                  <div class="input_wrapper">
+                      <label for="registration-confirm-transaction">Confirm transaction password</label>
+                      <input class="form-control" id="registration-confirm-transaction" type="text" placeholder="6-16 symbols, letters and numbers">
+                  </div>
+                  <button class="btn login-btn" type="submit">Confirm registration</button>
               </form>
           </div>
           

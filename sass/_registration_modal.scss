@@ -1,0 +1,13 @@
+.form_wrapper {
+    .input_wrapper {
+        @include d-flex;
+        
+        label {
+            @include flex-basis(40%);
+        }
+        
+        input {
+            @include flex-basis(60%);
+        }
+    }
+}

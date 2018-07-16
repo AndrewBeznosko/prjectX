@@ -9,7 +9,7 @@
           @include d-flex;
           @include flex-direction(column);
             
-             input[type="text"] {
+             input[type="text"], input[type="password"] {
                 background-color: #1b2f4a;
                 border: none;
                 color: #fff;

@@ -24,7 +24,42 @@
         text-shadow: none;
     }
     
-   
+    .form_wrapper {
+        
+        form {
+          @include d-flex;
+          @include flex-direction(column);
+            
+             input[type="text"], input[type="password"] {
+                background-color: #1b2f4a;
+                border: none;
+                color: #fff;
+                border: 2px solid #2c496c;
+                margin-bottom: 1rem;
+
+                &::-moz-placeholder {
+                    color: #768fad;
+                }
+
+                &::-webkit-input-placeholder {
+                    color: #768fad;
+                }
+                
+                &:focus {
+                    transition: none;
+                    border-color: #357ddd;
+                    box-shadow: none;
+                }
+            }
+            
+            .login-btn {
+                background-color: #357ddd;
+                color: #fff;
+                margin-bottom: 1rem;
+            }
+            
+        }
+    }
      
 }
 
