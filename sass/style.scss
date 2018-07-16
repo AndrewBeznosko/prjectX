@@ -98,8 +98,10 @@ header {
 
 .main-content {
     max-height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     @include d-flex;
     align-items: stretch;
+    padding-bottom: calc(0.428571429rem + 6px);
 }
 
 .sec-left {
@@ -111,6 +113,7 @@ header {
     @include flex-basis(68.9%);
     @include d-flex;
     padding: 0.714285714rem 1.42857143rem 0.428571429rem;
+    margin-bottom: calc(-0.428571429rem - 6px);
 
     .left {
         @include flex-basis(66.5%);
