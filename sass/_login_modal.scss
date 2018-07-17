@@ -15,14 +15,6 @@
                 color: #fff;
                 border: 2px solid #2c496c;
                 margin-bottom: 1rem;
-
-                &::-moz-placeholder {
-                    color: #768fad;
-                }
-
-                &::-webkit-input-placeholder {
-                    color: #768fad;
-                }
                 
                 &:focus {
                     transition: none;

@@ -28,4 +28,96 @@
             border-color: #357DDD;
         }
     }
+    
+    .modal-body {
+        
+        .modal-body-top {
+            color: #768fad;
+            padding: 10px 0;
+            border-bottom: 1px solid #1b2f4a;
+            
+            .b-icon-attantion {
+            color: #ff4b4b;
+            }
+            
+            .b-icon-wallet {
+                color: #768fad;
+            }
+            
+            .d-flex {
+                margin-bottom: 0.5rem;
+            }
+            
+            .b-icon {
+                margin-right: 1rem;
+            }
+        }
+        
+        .modal-body-bottom {
+            padding-top: 10px;
+            form {
+                 .input_wrapper {
+                    @include d-flex;
+                    @include align-items(center);
+
+                label {
+                    @include flex-basis(45%);
+                }
+
+                input {
+                    @include flex-basis(55%);
+                }
+                           
+                .input-group {
+                    @include flex-basis(55%);
+                    border: 2px solid #2c496c;
+                    border-radius: .25rem;
+                    
+                    input.confirm {
+                        margin: 0;
+                        border: none;
+                        border-radius: 0;
+                        
+                        &:focus {
+                           box-shadow: 0 0 0 2px #357ddd;
+                            
+                            &+div {
+                                box-shadow: 0 0 0 2px #357ddd;
+                            }
+                        }
+                    } 
+                    
+                    .input-group-text {
+                        background-color: #0c1b2f;
+                        border-radius: 0;
+                        margin-left: 1px;
+                        border: none;
+                        color: #007bff;
+                        font-weight: bold;
+                        font-size: 0.93rem ;
+                        
+                    }
+                }
+            }
+                
+                .button_wrapper {
+                @include d-flex;
+                @include justify-content(flex-end);
+                margin-top: 1rem;
+
+                button {
+                    @include flex-basis(55%);
+
+                }
+            }
+            }
+        }
+    }
+    
+    @media screen and (min-width: 576px) {
+
+        .modal-dialog {
+            max-width: 635px;
+        }
+    }
 }

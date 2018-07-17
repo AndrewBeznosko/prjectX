@@ -3,7 +3,9 @@
       }  
 
 .modal {
-    color:#768FAD;
+    color:#395c86;
+    font-size: 0.93rem;
+    font-weight: 500;
     
     .modal-content {
          border: solid 2px #1b2f4a;
@@ -35,6 +37,10 @@
     
     .form_wrapper {
         
+        .input_wrapper {
+            margin-bottom: 1rem;
+        }
+        
         form {
           @include d-flex;
           @include flex-direction(column);
@@ -44,15 +50,19 @@
                 border: none;
                 color: #fff;
                 border: 2px solid #2c496c;
-                margin-bottom: 1rem;
+                
 
                 &::-moz-placeholder {
-                    color: #768fad;                     
+                    color: #395c86;    
+                    font-size: 0.93rem;
+                    
                 }
 
                 &::-webkit-input-placeholder {
-                   color: #768fad;
+                    color: #395c86;
+                    font-size: 0.93rem;
                     
+                            
                 }
                 
                 &:focus {
