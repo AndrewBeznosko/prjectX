@@ -161,9 +161,6 @@
                 padding: 0 1rem 1rem;
 
                 .custom-radio .custom-control-input {
-                    
-                    
-                    //position: relative;
 
                     &:checked ~ .custom-control-label {
                        
@@ -210,6 +207,7 @@
 
                 &::-moz-placeholder {
                     color: #768fad;
+                    
                 }
 
                 &::-webkit-input-placeholder {

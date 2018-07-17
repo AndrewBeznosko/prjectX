@@ -1692,8 +1692,10 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
-        <h5 class="modal-title" id="exampleModalLabel">I already have an account</h5>
+        <div class="header_text">
+            <h5>Registration</h5>
+            <a href="#" class="">I already have an account</a>
+        </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span class="b-icon-close b-icon" aria-hidden="true"></span>
         </button>
@@ -1711,7 +1713,21 @@
                   </div>
                   <div class="input_wrapper">
                       <label for="registration-confirmation">Confirmation code</label>
-                      <input class="form-control" id="registration-confirmation" type="text" placeholder="Enter received code">
+<!--
+                      <div class="input-group">
+                          <input class="form-control" id="registration-confirmation" type="text" placeholder="Enter received code">
+                          <div>
+                            <span>Send</span>
+                          </div>
+                      </div>
+                      
+-->
+                 <div class="input-group">
+                                                <input class="form-control confirm" id="registration-confirmation" type="text" placeholder="Enter received code">
+                                                <div class="input-group-append">
+                                                    <a href="#" class="input-group-text">Send</a>
+                                                </div>
+                                            </div>
                   </div>
                   <div class="input_wrapper">
                       <label for="registration-password">Password</label>
@@ -1729,7 +1745,15 @@
                       <label for="registration-confirm-transaction">Confirm transaction password</label>
                       <input class="form-control" id="registration-confirm-transaction" type="text" placeholder="6-16 symbols, letters and numbers">
                   </div>
-                  <button class="btn login-btn" type="submit">Confirm registration</button>
+                  <div class="checkbox_wrapper">
+                     <div>
+                          <input type="checkbox" id="registration_checkbox"  id="exampleCheck1">
+                          <label for="registration_checkbox" >Checkbox</label>
+                      </div>
+                  </div>
+                  <div class="button_wrapper">
+                      <button class="btn login-btn" type="submit">Confirm registration</button>
+                  </div>
               </form>
           </div>
           

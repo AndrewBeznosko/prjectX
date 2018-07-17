@@ -1,13 +1,115 @@
-.form_wrapper {
-    .input_wrapper {
+.modal.registration_modal {
+    .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .header_text {
+        width: 100%;
         @include d-flex;
-        
-        label {
-            @include flex-basis(40%);
+        @include justify-content(space-between);
+        @include align-items(center);
+
+        h5 {
+            color: #fff;
         }
-        
-        input {
-            @include flex-basis(60%);
+    }
+
+    .form_wrapper {
+        form {
+            .input_wrapper {
+                @include d-flex;
+                @include align-items(center);
+
+                label {
+                    @include flex-basis(45%);
+                }
+
+                input {
+                    @include flex-basis(55%);
+                }
+                           
+                .input-group {
+                    margin-bottom: 1rem;
+                    @include flex-basis(55%);
+                    @include flex-direction(row-reverse);
+                    border: 2px solid #2c496c;
+                    border-radius: .25rem;
+                    
+                    input.confirm {
+                        margin: 0;
+                        border: none;
+                        border-radius: 0;
+                        
+                        &:focus {
+                           box-shadow: 0 0 0 2px #357ddd;
+                            
+                            &+div {
+                                box-shadow: 0 0 0 2px #357ddd;
+                            }
+                        }
+                    } 
+                    
+                    .input-group-text {
+                        background-color: #0c1b2f;
+                        border-radius: 0;
+                        margin-left: 1px;
+                        border: none;
+                        color: #007bff;
+                    }
+                }
+            }
+            
+            .checkbox_wrapper {
+                @include d-flex;
+                @include justify-content(flex-end);
+
+                label {
+                    margin: 0;
+                }
+
+                & > div {
+                    @include d-flex;
+                    @include align-items(center);
+                    @include flex-basis(55%);
+                }
+            }
+            
+            .button_wrapper {
+                @include d-flex;
+                @include justify-content(flex-end);
+                margin-top: 1rem;
+
+                button {
+                    @include flex-basis(55%);
+
+                }
+            }
+                       
+            /* need to fix! */
+            input[type="password"] {
+                -webkit-text-stroke-width: .3em;
+                letter-spacing: 0.6em;
+
+                &::-moz-placeholder {
+                     -webkit-text-stroke-width: .01em;
+                    letter-spacing: .01em;
+                }
+
+                &::-webkit-input-placeholder {
+                    -webkit-text-stroke-width: .01em;
+                    letter-spacing: .01em;
+                }
+                /* need to fix! */
+            }
+            
+        }
+
+    }
+
+    @media screen and (min-width: 576px) {
+
+        .modal-dialog {
+            max-width: 550px;
         }
     }
 }
