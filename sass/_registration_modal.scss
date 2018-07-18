@@ -1,4 +1,91 @@
-.modal.registration_modal {
+.registration_modal {
+    color:#395c86;
+    font-size: 0.93rem;
+    font-weight: 500;
+    width: 100%;
+    
+    .modal-dialog {
+        margin-top: 0;
+    }
+    
+    .modal-content {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .modal-body {
+        padding: 2.5rem 3.57142857rem .5rem 3.57142857rem;
+    }
+    
+    .modal-header {
+        @include align-items(center);
+        background-color: transparent;
+        border-bottom: solid 2px #1b2f4a;
+        padding: 3.92857143rem 3.57142857rem 2.3rem 3.57142857rem;
+        line-height: 1;
+        
+        .close span:hover {
+            color: #357ddd;
+        }
+    }
+    
+    .modal-title {
+        font-size: .86rem;
+    }
+    
+    .close {
+        text-shadow: none;
+    }
+    
+    .form_wrapper {
+        
+        .input_wrapper {
+            margin-bottom: 1.14rem;
+        }
+        
+        form {
+          @include d-flex;
+          @include flex-direction(column);
+            
+             input[type="text"], input[type="password"] {
+                background-color: #1b2f4a;
+                border: none;
+                color: #fff;
+                border: 2px solid #2c496c;
+                
+
+                &::-moz-placeholder {
+                    color: #395c86;    
+                    font-size: 0.93rem;
+                    
+                }
+
+                &::-webkit-input-placeholder {
+                    color: #395c86;
+                    font-size: 0.93rem;
+                    
+                            
+                }
+                
+                &:focus {
+                    transition: none;
+                    border-color: #357ddd;
+                    box-shadow: none;
+                }
+            }
+            
+            .login-btn {
+                background-color: #357ddd;
+                color: #fff;
+                margin-bottom: 1rem;
+            }
+            
+        }
+    }
+    
+    a:hover {
+        text-decoration: none; 
+    }
 
     .header_text {
         width: 100%;
@@ -30,6 +117,9 @@
 
                 input {
                     @include flex-basis(55%);
+                    padding: .7rem 1.14rem;
+                    border-radius: 2px;
+                    line-height: 1;
                 }
                            
                 .input-group {
@@ -114,10 +204,11 @@
             .button_wrapper {
                 @include d-flex;
                 @include justify-content(flex-end);
-                margin-top: 1rem;
+                margin-top: 2.2rem;
 
                 button {
                     @include flex-basis(55%);
+                    border-radius: 2px;
 
                 }
             }
@@ -146,7 +237,7 @@
     @media screen and (min-width: 576px) {
 
         .modal-dialog {
-            max-width: 550px;
+            max-width: 600px;
         }
     }
 }
