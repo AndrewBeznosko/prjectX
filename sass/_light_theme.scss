@@ -1,73 +1,349 @@
 .light_theme {
-    background-color: #fff!important;
-   
-    
-    .sec, .sec-left .searh-and-sortable, .sec-left .sortable, .sec-left .list .item, .sec-center-1 .chart_tab, .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active, .nav-tabs, .sec-center-3 .tbl-header, .sec-center-1 .chart_wrapper .chart_settings .left_settings .selected, .sec-center-1 .chart_wrapper .chart_settings .right_settings, header .navbar .log-in, .sec-center-3 .table tr td, .sec-center-4 .table thead th, .sec-center-2 .b-thead .b-row, .sec-right .new-order-wrapper form .input-group, .sec-right .title, .sec-right .balance-price-wrapper .price, .sec-right .tbl-header, .sec-right .bottom .table td, .sec-right .bottom .table th   {
-        border-color: #d8e2ef!important;
-        outline-color: #d8e2ef!important;   
+
+    /*
+================================================================================
+|                                    MAIN STYLES                               |
+================================================================================
+*/
+    background-color: #fff !important;
+
+    .sec,
+    .sec-left .searh-and-sortable,
+    .sec-left .sortable,
+    .sec-left .list .item,
+    .sec-center-1 .chart_tab,
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active,
+    .nav-tabs,
+    .sec-center-3 .tbl-header,
+    .sec-center-1 .chart_wrapper .chart_settings .left_settings .selected,
+    .sec-center-1 .chart_wrapper .chart_settings .right_settings,
+    header .navbar .log-in,
+    .sec-center-3 .table tr td,
+    .sec-center-4 .table thead th,
+    .sec-center-2 .b-thead .b-row,
+    .sec-right .new-order-wrapper form .input-group,
+    .sec-right .title,
+    .sec-right .balance-price-wrapper .price,
+    .sec-right .tbl-header,
+    .sec-right .bottom .table td,
+    .sec-right .bottom .table th {
+        border-color: #d8e2ef !important;
+        outline-color: #d8e2ef !important;
     }
-    
+
     .sec-right .new-order-wrapper form .input-group-text {
-        background-color: #d8e2ef!important;
+        background-color: #d8e2ef !important;
         border-radius: 0;
     }
+
+    header .navbar {
+        box-shadow: 0 2px 0 #d8e2ef !important;
+    }
+
+
+    .sec-center-2 .nav-tabs,
+    .sec-right .new-order-wrapper form input,
+    .sec-right .new-order-wrapper h4.title,
+    .sec-right .new-order-wrapper .nav-link,
+    .sec-right .orders-wrapper .title,
+    .sec-right .bottom .nav-tabs .nav-link {
+        background-color: #fff !important;
+
+    }
+
+    .sec-left,
+    header .navbar,
+    .sec-center-1,
+    .sec-center-2,
+    .sec-center-2 .b-thead .b-row,
+    .sec-center-2 .b-thead span,
+    .sec-center-3 .tab-content,
+    .sec-center-3 .table thead tr th,
+    .sec-center-3 .nav-tabs .nav-link.active,
+    .sec-center-4 .table-wrapper,
+    .sec-center-4 .table thead th,
+    .sec-right,
+    .sec-right .new-order-wrapper form,
+    .sec-right .nav-tabs .nav-link.active,
+    .sec-right .bottom .table thead th,
+    .sec-right .tbl-header {
+        background-color: #f6f9fc !important;
+    }
+    
+/*
+================================================================================
+|                                    HEADER                                    |
+================================================================================
+*/
     
     header .navbar {
-        box-shadow: 0 2px 0 #d8e2ef!important;
-    }
-    
-
-     .sec-center-2 .nav-tabs, .sec-right .new-order-wrapper form input, .sec-right .new-order-wrapper h4.title, .sec-right .new-order-wrapper .nav-link, .sec-right .orders-wrapper .title , .sec-right .bottom .nav-tabs .nav-link {
-        background-color: #fff!important;
-     
-    }
-    
-    .sec-left, header .navbar, .sec-center-1, .sec-center-2, .sec-center-2 .b-thead .b-row, .sec-center-2 .b-thead span, .sec-center-3 .tab-content, .sec-center-3 .table thead tr th, .sec-center-3 .nav-tabs .nav-link.active, .sec-center-4 .table-wrapper, .sec-center-4 .table thead th, .sec-right, .sec-right .new-order-wrapper form, .sec-right .nav-tabs .nav-link.active, .sec-right .bottom .table thead th, .sec-right .tbl-header {
-        background-color: #f6f9fc!important;
-    }
-    
-    .sec-right .nav-tabs .nav-link.active {
-        border-bottom-color: #f6f9fc!important;
-    }
-    
-    .sec-right .nav-tabs .nav-link {
-        border-color: #d8e2ef!important;
-    }
-    
-    .sec-right {
+        .navbar-left a {
+            color: #2c496c;
+        }
         
+        .navbar-right {
+            .b-icon-question, .b-icon-earth {
+                color: #768fad!important;
+                
+                &+span {
+                    color: #768fad!important;
+                }
+            }
+            
+            .nav-link:hover .b-icon {
+                color:rgb(0,207,122)!important;
+            }
+            
+            .b-icon-logIn + span {
+                color: #357ddd;
+            }
+            
+            
+        }
+    }
+
+    /*
+================================================================================
+|                                    SEC RIGHT                                 |
+================================================================================
+*/
+    .sec-right {
+
+        h4.title {
+            color: #395c86;
+        }
+
+        .nav-tabs .nav-link.active {
+            border-bottom-color: #f6f9fc !important;
+            font-weight: bold;
+        }
+
+        .nav-tabs .nav-link {
+            border-color: #d8e2ef !important;
+            color: #b6c3d2;
+        }
+
+        .balance-top-side {
+            .title {
+                color: #357DDD;
+            }
+
+            .b-icon {
+                color: #357DDD !important;
+            }
+        }
+        .balance-price-wrapper {
+            .price {
+                color: #357DDD;
+            }
+
+            .total-profit {
+                &__amount {
+                    color: #395c86;
+                }
+            }
+        }
+
         .new-order-wrapper {
             .custom-radio .custom-control-input {
-                
                 & ~ .custom-control-label::before {
-                        background-color: #fff!important;
-                    box-shadow: inset 0 0 0 2px #b6c3d2!important;
-                    }
-
-                    &:checked ~ .custom-control-label {
-                        color: inherit;
-                        &::before {
-                            box-shadow: inset 0 0 0 2px #b6c3d2!important;
-                        }
-                        
-                        &::after {
-                        
-                        }
+                    background-color: #fff !important;
+                    box-shadow: inset 0 0 0 2px #b6c3d2 !important;
                 }
-                
+
+                &:checked ~ .custom-control-label {
+                    color: inherit;
+                    &::before {
+                        box-shadow: inset 0 0 0 2px #b6c3d2 !important;
+                    }
+                }
+            }
+
+            .form-group label {
+                color: #768fad;
+            }
+
+            .total-amount .price {
+                color: #768fad;
+            }
+        }
+
+        .bottom {
+            
+            .nav-tabs {
+                background-color: #fff;
+            }
+
+            .nav-link:not(.active) {
+                color: #b6c3d2;
+            }
+            table td:not(:first-child) {
+                color: #2c496c;
+            }
+
+            .tbl-header th {
+                color: #768fad;
             }
         }
     }
-    
+
+    /*
+================================================================================
+|                                    SEC LEFT                                  |
+================================================================================
+*/
+    .sec-left {
+        .select-money .item:not(.selected) {
+            color: #b6c3d2;
+        }
+
+        .searh-and-sortable {
+            .b-icon-Sortable,
+            .b-icon-lupa {
+                color: #768fad;
+            }
+
+            .search {
+                input {
+                    &::-moz-placeholder {
+                        color: #768fad;
+                    }
+
+                    &::-webkit-input-placeholder {
+                        color: #768fad;
+                    }
+                }
+            }
+        }
+        .item {
+
+            &:not(.checked) .b-icon-bookmark {
+                color: #768fad !important;
+            }
+            .number {
+                color: #2c496c;
+            }
+
+            .currency .b-icon {
+                color: #2c496c !important;
+            }
+        }
+    }
+
+    /*
+================================================================================
+|                                    SEC-CENTER-2                               |
+================================================================================
+*/
+    .sec-center-2 {
+        .nav-tabs,
+        h5.title {
+            color: #395c86;
+        }
+
+        .b-row:hover {
+            background-color: #e8ecf2 !important;
+        }
+
+        .b-thead span {
+            color: #768fad;
+        }
+
+        .b-table {
+            span:not(:first-of-type) {
+                color: #395c86;
+            }
+        }
+
+        h4.center-title {
+            background-color: #e8ecf2;
+        }
+    }
+
+    /*
+================================================================================
+|                                    SEC-CENTER-1                              |
+================================================================================
+*/
+    .sec-center-1 {
+
+        .chart_tab .item:not(.selected),
+        .chart_settings .tab:not(.selected) {
+            color: #b6c3d2;
+        }
+
+        .b-icon-ShapeNormal {
+            color: #357ddd;
+        }
+    }
+
+    /*
+================================================================================
+|                                    SEC-CENTER-3                              |
+================================================================================
+*/
+    .sec-center-3 {
+        h5.title {
+            color: #395c86;
+        }
+
+        .nav-tabs .nav-link.active {
+            border-bottom: 2px solid #f6f9fc !important;
+        }
+
+        .nav-link:not(.active) .b-icon {
+            color: #768fad !important;
+        }
+
+        .tbl-header th {
+            color: #768fad
+        }
+
+        .tbl-content {
+            tr:not(.checked) .b-icon-notify {
+                color: #768fad;
+            }
+
+            .b-icon-currency_btc {
+                color: #2c496c;
+            }
+
+            .holding span:first-of-type,
+            .price span:last-of-type {
+                color: #2c496c;
+            }
+        }
+    }
+
+    /*
+================================================================================
+|                                    SEC-CENTER-4                               |
+================================================================================
+*/
+    .sec-center-4 {
+
+        h5.title {
+            color: #395c86;
+        }
+
+        .tbl-header th {
+            color: #768fad
+        }
+
+        tbody td {
+            color: #2c496c;
+        }
+    }
+
     /* light scrollbar */
-    
-     .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-        background-color: #d8e2ef!important;
+    .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background-color: #d8e2ef !important;
     }
-    
+
     .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
-        background-color: transparent!important;
+        background-color: transparent !important;
     }
-    
-    
+
+
 }

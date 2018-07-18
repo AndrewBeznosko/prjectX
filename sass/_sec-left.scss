@@ -2,7 +2,6 @@
     @include d-flex;
     @include flex-direction(column);
     border-left: none;
-//    border-bottom: none;
 
     .controllers {
         @include flex(0 1 auto);
@@ -151,10 +150,6 @@
             &:focus {
                 outline: none;
                 box-shadow: none;      
-            }
-
-            &:focus + label path {
-                fill: #357ddd;
             }
             
             &::-moz-placeholder { 

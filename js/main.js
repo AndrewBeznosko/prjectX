@@ -54,6 +54,7 @@ $(document).ready(function () {
     
     $("#switch_theme").click(function() {
         $("body").toggleClass("light_theme");
+        $(this).children("span").toggleClass("b-icon-Sun b-icon-moon");
     });
     
 });
