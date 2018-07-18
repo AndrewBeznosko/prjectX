@@ -107,7 +107,7 @@
                                     </div>
                                     <div class="input_wrapper">
                                         <label for="registration-confirmation">Confirmation code</label>
-                                        <div class="input-group">
+                                        <div class="input-group confirmation-wrapper">
                                             <input class="form-control confirm" id="registration-confirmation" type="text" placeholder="Enter received code">
                                             <div class="input-group-append">
                                                 <a href="#" class="input-group-text">Send</a>
@@ -116,11 +116,21 @@
                                     </div>
                                     <div class="input_wrapper">
                                         <label for="registration-password">Password</label>
-                                        <input class="form-control" id="registration-password" type="password" placeholder="Password">
+                                        <div class="input-group password-wrapper">
+                                            <input class="form-control" id="registration-password" type="password" placeholder="Password">
+                                            <div class="input-group-append">
+                                                <a href="#" class="input-group-text password-eye"><span class="b-icon-eye_slash b-icon" aria-hidden="true"></span></a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="input_wrapper">
                                         <label for="registration-confirm_password">Confirm password</label>
-                                        <input class="form-control" id="registration-confirm_password" type="password" placeholder="Password">
+                                        <div class="input-group password-wrapper">
+                                            <input class="form-control" id="registration-confirm_password" type="password" placeholder="Password">
+                                            <div class="input-group-append">
+                                                <a href="#" class="input-group-text password-eye"><span class="b-icon-eye_slash b-icon" aria-hidden="true"></span></a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="input_wrapper">
                                         <label for="registration-transaction">Transaction password</label>
@@ -261,6 +271,7 @@
             theme: "dark-3",
             scrollInertia: 200
         });
+
     </script>
     <script>
         var ctx = document.getElementById("myChart");
@@ -290,6 +301,7 @@
                 }
             }
         });
+
     </script>
 
     <!-- main JS -->

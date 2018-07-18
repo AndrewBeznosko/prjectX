@@ -72,3 +72,18 @@ $(window).on("load resize ", function () {
     }
 
 }).resize();
+
+
+
+//password mask
+$('.password-eye').click(function(){
+    var icon = $(this).find(".b-icon");
+    
+    if ( icon.hasClass('b-icon-eye_slash') ){
+        icon.removeClass('b-icon-eye_slash').addClass('b-icon-eye');
+        icon.parents(".input-group").find("input").attr('type','text');    
+    } else {
+        icon.removeClass('b-icon-eye').addClass('b-icon-eye_slash');
+        icon.parents(".input-group").find("input").attr('type','password');
+    }
+});

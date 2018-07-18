@@ -124,9 +124,44 @@
                            
                 .input-group {
                     @include flex-basis(55%);
-                    @include flex-direction(row-reverse);
                     border: 2px solid #2c496c;
-                    border-radius: .25rem;
+                    border-radius: 2px;
+                    
+                    &.confirmation-wrapper {
+                        @include flex-direction(row-reverse);
+                    }
+                    
+                    &.password-wrapper {
+                        border: none;
+                        
+                        .form-control {
+                            border: 2px solid #2c496c;
+                            border-radius: 2px 0 0 2px; 
+                            border-right: none;
+                            transition: none;
+                            
+                            &:focus {
+                                border-color: #357ddd;
+                            }
+                            
+                            &:focus + .input-group-append {
+                                .input-group-text {
+                                    border-color: #357ddd;
+                                }
+                                
+                                .b-icon {
+                                    color: #357ddd;
+                                }
+                            }
+                        }
+                        
+                        .input-group-text {
+                            background-color: #1b2f4a;
+                            border: 2px solid #2c496c;
+                            border-radius: 0 2px 2px 0;
+                            border-left: none;
+                        }
+                    }
                     
                     input.confirm {
                         margin: 0;
