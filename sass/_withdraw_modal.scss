@@ -118,6 +118,11 @@
                         font-size: 0.93rem ;
                         
                     }
+                    
+                    .dropdown-toggle::after {
+                        border-top-width: .4em;
+                        color:#fff;
+                    }
                 }
                      
                      input[type="password"] {

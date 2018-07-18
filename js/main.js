@@ -51,6 +51,11 @@ $(document).ready(function () {
         });
 
     });
+    
+    $("#switch_theme").click(function() {
+        $("body").toggleClass("light_theme");
+    });
+    
 });
 
 // calculate table height
