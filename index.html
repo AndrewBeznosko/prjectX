@@ -1652,11 +1652,11 @@
           </div>
       <div class="modal-body">
         <div class="modal-body-top">
-             <div class="d-flex">
+             <div class="d-flex align-items-center">
                  <span class="b-icon-wallet b-icon"></span>
                  <span>76 943.00450021 BTC</span>
              </div>
-             <div class="d-flex">
+             <div class="d-flex align-items-center">
                  <span class="b-icon-attantion b-icon"></span>
                  <span>Commission for withdraw 0,03%, but not less than 0,002 BTC</span>
              </div>
@@ -1665,39 +1665,41 @@
              <div class="form_wrapper">
               <form action="">
                   <div class="input_wrapper">
-                      <label for="registration-confirmation">Withdraw amount</label>
+                      <label for="withdraw_amount">Withdraw amount</label>
                  <div class="input-group">
-                    <input class="form-control confirm" id="registration-confirmation" type="text" placeholder="Enter withdraw amount">
+                    <input class="form-control confirm" id="withdraw_amount" type="text" placeholder="Enter withdraw amount">
                     <div class="input-group-append">
                         <span class="input-group-text">BTC</span>
                     </div>
                 </div>
                   </div>
                   <div class="input_wrapper">
-                      <label for="registration-confirmation">Amount with commission</label>
+                      <label for="amount_with_commission">Amount with commission</label>
                  <div class="input-group">
-                    <input class="form-control confirm" id="registration-confirmation" type="text" placeholder="Enter amount with commission">
+                    <input class="form-control confirm" id="amount_with_commission" type="text" placeholder="Enter amount with commission">
                     <div class="input-group-append">
                         <a href="#" class="input-group-text">BTC</a>
                     </div>
                 </div>
                   </div>
                   <div class="input_wrapper">
-                      <label for="registration-confirmation">Wallet adress</label>
+                      <label for="wallet_adress">Wallet adress</label>
                  <div class="input-group">
-                    <input class="form-control confirm" id="registration-confirmation" type="text" placeholder="Enter wallet adress">
+                    <input class="form-control confirm" id="wallet_adress" type="text" placeholder="Enter wallet adress">
                     <div class="input-group-append">
                         <a href="#" class="input-group-text"></a>
                     </div>
                 </div>
-                <div class="add_adress">
+                <a href="" class="add_adress d-flex align-items-center">
                      <span class="b-icon b-icon-plus"></span>
                      <span>Add adress</span>
-                 </div>
+                 </a>
                   </div>
                   <div class="input_wrapper">
-                      <label for="registration-password">Password</label>
-                      <input class="form-control" id="registration-password" type="password" placeholder="Password">
+                      <label for="withdraw-password">Password</label>
+                      <div class="input-group">
+                        <input class="form-control confirm" id="withdraw-password" type="password" placeholder="Password">
+                      </div>
                   </div>
                   <div class="button_wrapper">
                       <button class="btn login-btn" type="submit">Withdraw funds</button>

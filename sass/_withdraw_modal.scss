@@ -1,7 +1,12 @@
 .withdraw_modal {
+    
+    .b-icon {
+        font-size: 1rem;
+    }
      .select-money {
+         background-color: #0C1B2F;
         @include d-flex;
-        justify-content: flex-start;
+         @include justify-content(flex-start);
         padding: 0 10px;  
         border-bottom: 2px solid #1b2f4a;
 
@@ -31,13 +36,18 @@
     
     .modal-body {
         
+        background-color: #0C1B2F;
+        
         .modal-body-top {
+            font-family: "Segoe UI";
+            font-weight: 400;
+            font-size: 1rem;
             color: #768fad;
             padding: 10px 0;
             border-bottom: 1px solid #1b2f4a;
             
             .b-icon-attantion {
-            color: #ff4b4b;
+                color: #ff4b4b;
             }
             
             .b-icon-wallet {
@@ -50,26 +60,37 @@
             
             .b-icon {
                 margin-right: 1rem;
+                
             }
         }
         
         .modal-body-bottom {
             padding-top: 10px;
+            
             form {
                  .input_wrapper {
                     @include d-flex;
                     @include align-items(center);
+                     
+                     .add_adress {
+                         @include d-flex;
+                         @include align-items(center);
+                         @include flex-basis(25%);
+                         @include justify-content(center);
+                          
+                         span {
+                             color:#357DDD;
+                             margin-left: 0.5rem;        
+                         }
+                     }
 
                 label {
-                    @include flex-basis(45%);
+                    @include flex-basis(35%);
                 }
 
-                input {
-                    @include flex-basis(55%);
-                }
                            
                 .input-group {
-                    @include flex-basis(55%);
+                    @include flex-basis(40%);
                     border: 2px solid #2c496c;
                     border-radius: .25rem;
                     
@@ -92,21 +113,26 @@
                         border-radius: 0;
                         margin-left: 1px;
                         border: none;
-                        color: #007bff;
+                        color: #2c496c;
                         font-weight: bold;
                         font-size: 0.93rem ;
                         
                     }
                 }
+                     
+                     input[type="password"] {
+                         border: none;
+                     }
             }
                 
                 .button_wrapper {
                 @include d-flex;
                 @include justify-content(flex-end);
-                margin-top: 1rem;
+                    
 
                 button {
-                    @include flex-basis(55%);
+                    @include flex-basis(40%);
+                    margin-right: 25%;
 
                 }
             }
