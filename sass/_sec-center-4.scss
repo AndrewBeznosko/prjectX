@@ -49,6 +49,10 @@
         padding: .75rem;
         vertical-align: top;
     }
+    
+  tbody  tr.red td:nth-child(2) {
+        color:#FF4B4B;
+    }
 
     .table td {
         text-align: right;

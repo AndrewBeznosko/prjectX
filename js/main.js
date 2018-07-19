@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    
+    if(localStorage.getItem('myItem') == 'light_theme') {
+        $('body').addClass('light_theme'); 
+    }
+   
 
     // Select money
     $("#js-select-money .item").each(function () {
@@ -51,11 +56,30 @@ $(document).ready(function () {
         });
 
     });
-    
+   
     $("#switch_theme").click(function() {
         $("body").toggleClass("light_theme");
         $(this).children("span").toggleClass("b-icon-Sun b-icon-moon");
+        
+        if($('body').hasClass("light_theme")) {
+            localStorage.setItem('myItem', 'light_theme');
+        } else if($('body').hasClass("")) 
+        { localStorage.setItem('myItem', '');}
     });
+    
+    /* local storage */
+//     $(document).change(function(){
+//           var light = 'light_theme';
+//                if ($('body').hasClass('light_theme')) {
+//                    localStorage.setItem('classView', light);
+//                }  
+//         
+//         if(localStorage.getItem('classView') == 'light_theme') {
+//             $('body').addClass('light_theme');
+//         }
+//        
+//        });
+
     
 });
 
