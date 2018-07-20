@@ -2,6 +2,7 @@
     @include d-flex;
     @include flex-direction(column);
     border-radius: 2px;
+    background-color: #101E32;
 
     nav {
         @include flex(0 1 auto);

@@ -2,6 +2,7 @@
     @include d-flex;
     @include flex-direction(column);
     border-left: none;
+    background-color: #101E32;
 
     .controllers {
         @include flex(0 1 auto);
