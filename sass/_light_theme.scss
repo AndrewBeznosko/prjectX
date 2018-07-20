@@ -21,8 +21,7 @@
     header .navbar .log-in,
     .sec-center-3 .table tr td,
     .sec-center-4 .table thead th,
-    .sec-center-2 .b-thead .b-row,
-    .sec-right .new-order-wrapper form .input-group,
+    .sec-center-2 .b-thead .b-row, .input-group, input,
     .sec-right .title,
     .sec-right .balance-price-wrapper .price,
     .sec-right .tbl-header,
@@ -30,11 +29,6 @@
     .sec-right .bottom .table th {
         border-color: #d8e2ef !important;
         outline-color: #d8e2ef !important;
-    }
-
-    .sec-right .new-order-wrapper form .input-group-text {
-        background-color: #d8e2ef !important;
-        border-radius: 0;
     }
 
     header .navbar {
@@ -75,6 +69,25 @@
         color:#768fad !important;
     }
     
+    form .input-group-text {
+        background-color: #d8e2ef !important;
+        border-radius: 0;
+        font-weight: 400!important;
+        }
+    
+    
+     input {
+         
+         background-color: #f6f9fc!important;
+                    &::-moz-placeholder {
+                        color: #768fad!important;
+                    }
+
+                    &::-webkit-input-placeholder {
+                        color: #768fad!important;
+                    }
+                }
+    
 /*
 ================================================================================
 |                                    HEADER                                    |
@@ -90,13 +103,13 @@
             }
         }
         
+        .nav-link {
+          color: #768fad!important;  
+        }
+        
         .navbar-right {
             .b-icon-question, .b-icon-earth {
                 color: #768fad!important;
-                
-                &+span {
-                    color: #768fad!important;
-                }
             }
             
             .nav-link:hover .b-icon {
@@ -215,17 +228,6 @@
                 color: #768fad;
             }
 
-            .search {
-                input {
-                    &::-moz-placeholder {
-                        color: #768fad;
-                    }
-
-                    &::-webkit-input-placeholder {
-                        color: #768fad;
-                    }
-                }
-            }
         }
         .item {
             
@@ -365,6 +367,43 @@
     .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
         background-color: transparent !important;
     }
+    
+     /*
+================================================================================
+|                                    MODAL                                     |
+================================================================================
+*/
 
-
+.modal {
+    //color:#2c496c;
 }
+    
+    .modal-content {
+         border-color: #d8e2ef !important;
+        outline-color: #d8e2ef !important;
+    }
+    
+    .select-money {
+     background-color: #f6f9fc!important;  
+     border-bottom-color: #d8e2ef !important;
+        .item:not(.selected) {
+            color: #b6c3d2;
+        }
+    }
+    
+    .modal-header {
+        background-color: #e1e6ea !important;
+    }
+    
+    .modal-body {
+        background-color: #f6f9fc !important;
+    }
+    
+    .modal-body-top {
+        border-bottom-color: #e1e6ea!important;
+    }
+
+    
+}
+
+ 
