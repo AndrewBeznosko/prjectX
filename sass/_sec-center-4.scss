@@ -132,12 +132,15 @@
         width: 100%;
         table-layout: fixed;
         margin-bottom: 0;
+        
+        &.second {
+            margin-top: 3px;    
+        }
     }
 
     .tbl-content {
         height: 115px;
         overflow-x: auto;
         overflow-y: auto; 
-        padding-top: 5px;
     }
 }
