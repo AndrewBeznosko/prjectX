@@ -200,7 +200,7 @@
                 color: #fff;
             }
 
-            input[type="number"] {
+            input.calc {
                 background-color: #1b2f4a;
                 border: none;
                 color: #fff;
@@ -306,6 +306,41 @@
     }
 
     .bottom {
+        .link {
+            display: inline-block;
+            position: relative;
+            line-height:  1;
+            padding: .5rem .9rem;
+            margin-right: 1.1rem;
+            margin-left:  auto;
+            color: #357DDD;
+            
+            &:hover {
+                opacity: 1;
+                text-decoration: none;
+                text-shadow: 0 0 3px rgb(11, 112, 247);
+                color: #5097f5;
+                
+                &::after {
+                    border-top: solid 2px #5097f5;
+                    border-right: solid 2px #5097f5;
+                }
+            }
+            
+            &::after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                width: 7px;
+                height: 7px;
+                border-top: solid 2px #357DDD;
+                border-right: solid 2px #357DDD;
+                transform: translateY(-55%) rotate(45deg);
+            }
+        }
+        
         .nav-tabs {
             @include d-flex;
             align-items: center;

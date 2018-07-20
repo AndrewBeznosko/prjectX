@@ -22,64 +22,7 @@
 
 <body>
     <div class="main-wrapper">
-        <header>
-            <nav class="navbar navbar-expand-md navbar-dark">
-                <a class="navbar-brand" href="#">LOGOTYPE</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav navbar-left mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link">High: $ 0.00395234 <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Last: $ 0.00395234</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Trades: $ 0.00395234</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav navbar-right">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                            <span class="b-icon-question b-icon"></span>
-                            <span class="ml-2">FAQ</span>
-                            </a>
-                        </li>
-                        <li class="nav-item" class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="b-icon-earth b-icon"></span>
-                            <span class="ml-2 LangName">Eng</span>
-                            </a>
-
-                            <div id="dropdownLang-list" class="dropdown-menu" aria-labelledby="dropdownLang">
-                                <a class="dropdown-item active" href="#">Eng</a>
-                                <a class="dropdown-item" href="#">Rus</a>
-                                <a class="dropdown-item" href="#">Ua</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="switch_theme" href="#">
-                                <span class="b-icon-Sun b-icon blue"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="b-icon-bell b-icon blue"></span>
-                                <span class="bell_circle"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn log-in" data-toggle="modal" data-target="#login_modal" href="#">
-                                <span class="b-icon-logIn b-icon blue"></span>
-                                <span class="ml-2">Log in</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        <header></header>
 
         <main class="main-content">
             <section class="sec sec-left">
@@ -1249,7 +1192,7 @@
                         <span class="b-icon-wallet b-icon"></span> Balance
                         </span>
                         <div class="btns-wrapper">
-                            <a href="" class="btn" data-toggle="modal" data-target="#registration_modal">Deposit</a>
+                            <a href="" class="btn">Deposit</a>
                             <a href="" class="btn" data-toggle="modal" data-target="#withdraw_modal">Withdraw</a>
                         </div>
                     </div>
@@ -1290,7 +1233,7 @@
                                         <label for="newOrderAmount" class="col-sm-3 col-form-label">Amount</label>
                                         <div class="col-sm-9">
                                             <div class="input-group">
-                                                <input type="number" class="form-control" id="newOrderAmount" placeholder="Amount" aria-label="Amount (to the nearest dollar)" step="0.001">
+                                                <input type="text" class="calc form-control" id="newOrderAmount" placeholder="Amount" aria-label="Amount (to the nearest dollar)" step="0.001">
                                                 <div class="input-group-append custom-input-group-append">
                                                     <span class="input-group-text">BTC</span>
                                                 </div>
@@ -1301,7 +1244,7 @@
                                         <label for="newOrderPrice" class="col-sm-3 col-form-label">Price</label>
                                         <div class="col-sm-9">
                                             <div class="input-group">
-                                                <input type="number" class="form-control" id="newOrderPrice" placeholder="Price" aria-label="Amount (to the nearest dollar)" step="0.001">
+                                                <input type="text" class="calc form-control" id="newOrderPrice" placeholder="Price" aria-label="Amount (to the nearest dollar)" step="0.001">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">USD</span>
                                                 </div>
@@ -1344,7 +1287,7 @@
                                         <label for="newOrderAmount2" class="col-sm-3 col-form-label">Amount</label>
                                         <div class="col-sm-9">
                                             <div class="input-group">
-                                                <input type="number" class="form-control" id="newOrderAmount2" placeholder="Amount" aria-label="Amount (to the nearest dollar)">
+                                                <input type="text" class="calc form-control" id="newOrderAmount2" placeholder="Amount" aria-label="Amount (to the nearest dollar)">
                                                 <div class="input-group-append custom-input-group-append">
                                                     <span class="input-group-text">BTC</span>
                                                 </div>
@@ -1355,7 +1298,7 @@
                                         <label for="newOrderPrice2" class="col-sm-3 col-form-label">Price</label>
                                         <div class="col-sm-9">
                                             <div class="input-group">
-                                                <input type="number" class="form-control" id="newOrderPrice2" placeholder="Price" aria-label="Amount (to the nearest dollar)">
+                                                <input type="text" class="calc form-control" id="newOrderPrice2" placeholder="Price" aria-label="Amount (to the nearest dollar)">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">USD</span>
                                                 </div>
@@ -1392,6 +1335,7 @@
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <a class="nav-item nav-link active" id="nav-orders-tab" data-toggle="tab" href="#nav-orders" role="tab" aria-controls="nav-orders" aria-selected="true">Orders</a>
                             <a class="nav-item nav-link" id="nav-trades-tab" data-toggle="tab" href="#nav-trades" role="tab" aria-controls="nav-trades" aria-selected="false">Trades</a>
+                            <a href="orders.html" class="link">All</a>
                         </div>
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
@@ -1740,79 +1684,6 @@
     </div>
     <!-- Modal Log-in END -->
 
-    <!-- Modal Registration -->
-    <div class="modal fade registration_modal" id="registration_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="header_text">
-                        <h5>Registration</h5>
-                        <a href="#" class="">I already have an account</a>
-                    </div>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="b-icon-close b-icon" aria-hidden="true"></span>
-        </button>
-                </div>
-                <div class="modal-body">
-                    <div class="form_wrapper">
-                        <form action="">
-                            <div class="input_wrapper">
-                                <label for="registration-e-mail">E-mail</label>
-                                <input class="form-control" id="registration-e-mail" type="text" placeholder="Your e-mail">
-                            </div>
-                            <div class="input_wrapper">
-                                <label for="registration-login">Login</label>
-                                <input class="form-control" id="registration-login" type="text" placeholder="Please, enter your login">
-                            </div>
-                            <div class="input_wrapper">
-                                <label for="registration-confirmation">Confirmation code</label>
-                                <div class="input-group">
-                                    <input class="form-control confirm" id="registration-confirmation" type="text" placeholder="Enter received code">
-                                    <div class="input-group-append">
-                                        <a href="#" class="input-group-text">Send</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="input_wrapper">
-                                <label for="registration-password">Password</label>
-                                <div class="input-group">
-                                    <input class="form-control" id="registration-password" type="password" placeholder="Password">
-                                    <div class="input-group-append">
-                                        <a href="#" class="input-group-text"><span class="b-icon-eye_slash b-icon" aria-hidden="true"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="input_wrapper">
-                                <label for="registration-confirm_password">Confirm password</label>
-                                <input class="form-control" id="registration-confirm_password" type="password" placeholder="Password">
-                            </div>
-                            <div class="input_wrapper">
-                                <label for="registration-transaction">Transaction password</label>
-                                <input class="form-control" id="registration-transaction" type="text" placeholder="6-16 symbols, letters and numbers">
-                            </div>
-                            <div class="input_wrapper">
-                                <label for="registration-confirm-transaction">Confirm transaction password</label>
-                                <input class="form-control" id="registration-confirm-transaction" type="text" placeholder="6-16 symbols, letters and numbers">
-                            </div>
-                            <div class="checkbox_wrapper">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" id="registration_checkbox" class="custom-control-input">
-                                    <label for="registration_checkbox" class="custom-control-label">I'm agree</label>
-                                </div>
-                            </div>
-                            <div class="button_wrapper">
-                                <button class="btn login-btn" type="submit">Confirm registration</button>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal Registration END -->
-
-
     <script src="js/jquery-3.1.1.min.js"></script>
 
     <!--     bootstrap.min.js -- Latest compiled and minified JavaScript -->
@@ -1862,10 +1733,6 @@
 
     <!-- main JS -->
     <script src="js/main.js"></script>
-
-    <!-- Slick -->
-    <script src="js/slick/slick.min.js"></script>
-
 </body>
 
 </html>

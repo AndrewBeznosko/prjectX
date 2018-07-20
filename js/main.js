@@ -1,10 +1,6 @@
-$(document).ready(function () {
-    
-    if(localStorage.getItem('myItem') == 'light_theme') {
-        $('body').addClass('light_theme'); 
-    }
-   
+$("header").load("header.html");
 
+$(document).ready(function () {
     // Select money
     $("#js-select-money .item").each(function () {
         $(this).click(function () {
@@ -56,32 +52,23 @@ $(document).ready(function () {
         });
 
     });
-   
-    $("#switch_theme").click(function() {
+
+    $("#switch_theme").click(function () {
         $("body").toggleClass("light_theme");
         $(this).children("span").toggleClass("b-icon-Sun b-icon-moon");
-        
-        if($('body').hasClass("light_theme")) {
-            localStorage.setItem('myItem', 'light_theme');
-        } else if($('body').hasClass("")) 
-        { localStorage.setItem('myItem', '');}
-    });
-    
-    /* local storage */
-//     $(document).change(function(){
-//           var light = 'light_theme';
-//                if ($('body').hasClass('light_theme')) {
-//                    localStorage.setItem('classView', light);
-//                }  
-//         
-//         if(localStorage.getItem('classView') == 'light_theme') {
-//             $('body').addClass('light_theme');
-//         }
-//        
-//        });
 
-    
+        if ($('body').hasClass("light_theme")) {
+            localStorage.setItem('myItem', 'light_theme');
+        } else {
+            localStorage.setItem('myItem', '');
+        }
+    });
 });
+
+// light theme template
+if (localStorage.getItem('myItem') == 'light_theme') {
+    $('body').addClass('light_theme');
+}
 
 // calculate table height
 $(window).on("load resize ", function () {
@@ -106,14 +93,14 @@ $(window).on("load resize ", function () {
 
 
 //password mask
-$('.password-eye').click(function(){
+$('.password-eye').click(function () {
     var icon = $(this).find(".b-icon");
-    
-    if ( icon.hasClass('b-icon-eye_slash') ){
+
+    if (icon.hasClass('b-icon-eye_slash')) {
         icon.removeClass('b-icon-eye_slash').addClass('b-icon-eye');
-        icon.parents(".input-group").find("input").attr('type','text');    
+        icon.parents(".input-group").find("input").attr('type', 'text');
     } else {
         icon.removeClass('b-icon-eye').addClass('b-icon-eye_slash');
-        icon.parents(".input-group").find("input").attr('type','password');
+        icon.parents(".input-group").find("input").attr('type', 'password');
     }
 });
