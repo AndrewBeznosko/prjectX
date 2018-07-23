@@ -88,9 +88,21 @@
     .pagination {
         @include align-items(center);
         
+        .page-item.active .page-link {
+            font-size: 1rem;
+            color: #357DDD;
+        }
+        
         .page-link {
             background-color: transparent;
             border: none;
+            font-size: 0.928571429rem;
+            color: #395C86;
+            line-height: 1;
+            
+            &:hover {
+                color: #357DDD;
+            }
         }
         
         .b-icon {
