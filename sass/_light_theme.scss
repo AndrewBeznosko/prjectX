@@ -69,6 +69,10 @@
         color:#768fad !important;
     }
     
+    input[type="password"] {
+        
+}
+    
     form .input-group-text {
         background-color: #d8e2ef !important;
         border-radius: 0;
@@ -95,8 +99,13 @@
 */
     
     header .navbar {
+        
+        .navbar-brand:hover {
+            color:#304152!important;
+        }
         .navbar-left a {
             color: #2c496c;
+           
             
              &:hover {
                 color:#2c496c;
@@ -418,7 +427,7 @@
                     color: #61768b;
                 }
             }
-        }  
+        } 
         
         .input-group-text {
             border-color: #d8e2ef!important;
@@ -429,6 +438,10 @@
                 border-color: #d8e2ef!important;
                 background-color: #f6f9fc !important;
             }
+        }
+        
+        .password-wrapper input:focus + .input-group-append a {
+            border: 2px solid #357ddd!important;
         }
     }
     

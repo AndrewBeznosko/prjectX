@@ -2,7 +2,7 @@ $("header").load("header.html");
 $("#modal_login").load("modal_login.html");
 
 
-/* ScrollBar include */
+/* ScrollBar include */ 
 $(".list").mCustomScrollbar({
     theme: "dark-3",
     scrollInertia: 200
@@ -93,7 +93,7 @@ $(window).on("load resize ", function () {
 
 
 
-//password mask
+//password mask 
 $('.password-eye').click(function () {
     var icon = $(this).find(".b-icon");
 
