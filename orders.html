@@ -37,215 +37,574 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8">
-                        <div class="js-header-select header-select second">
-                            <div class="item selected">Active orders</div>
-                            <div class="item">history orders</div>
-                            <div class="item">Trade</div>
-                        </div>
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-active_orders-tab" data-toggle="pill" href="#pills-active_orders" role="tab" aria-controls="pills-active_orders" aria-selected="true">Active orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-history_orders-tab" data-toggle="pill" href="#pills-history_orders" role="tab" aria-controls="pills-history_orders" aria-selected="false">history orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-trade_orders-tab" data-toggle="pill" href="#pills-trade_orders" role="tab" aria-controls="pills-trade_orders" aria-selected="false">Trade</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-active_orders" role="tabpanel" aria-labelledby="pills-active_orders-tab">
+                                <table class="table" cellpadding="0" cellspacing="0" border="0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Time <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Operation <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Price <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Amount <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Total amount <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Transactions <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Status <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                            <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td class="red">Sell</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                            <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                            <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                            <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                            <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                            <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                            <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                            <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                            <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                            <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                            <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                            <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                            <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                            <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
-                        <table class="table" cellpadding="0" cellspacing="0" border="0">
-                            <thead>
-                                <tr>
-                                    <th scope="col">ID <span class="b-icon b-icon-arrow_down desc"></span></th>
-                                    <th scope="col">Time <span class="b-icon b-icon-arrow_down desc"></span></th>
-                                    <th scope="col">Operation <span class="b-icon b-icon-arrow_down desc"></span></th>
-                                    <th scope="col">Price <span class="b-icon b-icon-arrow_down desc"></span></th>
-                                    <th scope="col">Amount <span class="b-icon b-icon-arrow_down desc"></span></th>
-                                    <th scope="col">Total amount <span class="b-icon b-icon-arrow_down desc"></span></th>
-                                    <th scope="col">Transactions <span class="b-icon b-icon-arrow_down desc"></span></th>
-                                    <th scope="col">Status <span class="b-icon b-icon-arrow_down desc"></span></th>
-                                    <th scope="col"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>234576538457234</td>
-                                    <td>20-06-2018 23:23:54</td>
-                                    <td>Buy</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>0</td>
-                                    <td>Expect</td>
-                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>234576538457234</td>
-                                    <td>20-06-2018 23:23:54</td>
-                                    <td class="red">Sell</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>0</td>
-                                    <td>Expect</td>
-                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>234576538457234</td>
-                                    <td>20-06-2018 23:23:54</td>
-                                    <td>Buy</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>0</td>
-                                    <td>Expect</td>
-                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>234576538457234</td>
-                                    <td>20-06-2018 23:23:54</td>
-                                    <td>Buy</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>0</td>
-                                    <td>Expect</td>
-                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>234576538457234</td>
-                                    <td>20-06-2018 23:23:54</td>
-                                    <td>Buy</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>0</td>
-                                    <td>Expect</td>
-                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>234576538457234</td>
-                                    <td>20-06-2018 23:23:54</td>
-                                    <td>Buy</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>0</td>
-                                    <td>Expect</td>
-                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>234576538457234</td>
-                                    <td>20-06-2018 23:23:54</td>
-                                    <td>Buy</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>0</td>
-                                    <td>Expect</td>
-                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>234576538457234</td>
-                                    <td>20-06-2018 23:23:54</td>
-                                    <td>Buy</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>0</td>
-                                    <td>Expect</td>
-                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>234576538457234</td>
-                                    <td>20-06-2018 23:23:54</td>
-                                    <td>Buy</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>0</td>
-                                    <td>Expect</td>
-                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>234576538457234</td>
-                                    <td>20-06-2018 23:23:54</td>
-                                    <td>Buy</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>0</td>
-                                    <td>Expect</td>
-                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>234576538457234</td>
-                                    <td>20-06-2018 23:23:54</td>
-                                    <td>Buy</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>0</td>
-                                    <td>Expect</td>
-                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>234576538457234</td>
-                                    <td>20-06-2018 23:23:54</td>
-                                    <td>Buy</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>0</td>
-                                    <td>Expect</td>
-                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>234576538457234</td>
-                                    <td>20-06-2018 23:23:54</td>
-                                    <td>Buy</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>0</td>
-                                    <td>Expect</td>
-                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>234576538457234</td>
-                                    <td>20-06-2018 23:23:54</td>
-                                    <td>Buy</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>34</td>
-                                    <td>0</td>
-                                    <td>Expect</td>
-                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <nav class="pagination-wrapper" aria-label="navigation">
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
+                                <nav class="pagination-wrapper" aria-label="navigation">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
                                         <span class="b-icon b-icon-dubble_arr_l"></span>
                                     </a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
                                         <span class="b-icon b-icon-arr_l"></span>
                                     </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item active"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
                                         <span class="b-icon b-icon-arr_r"></span>
                                     </a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
                                         <span class="b-icon b-icon-dubble_arr_r"></span>
                                     </a>
-                                </li>
-                            </ul>
-                            
-                            <div class="total-posts">Total posts: 634</div>
-                        </nav>
+                                        </li>
+                                    </ul>
+
+                                    <div class="total-posts">Total posts: 634</div>
+                                </nav>
+                            </div>
+                            <div class="tab-pane fade" id="pills-history_orders" role="tabpanel" aria-labelledby="pills-history_orders-tab">
+                                <table class="table" cellpadding="0" cellspacing="0" border="0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Time <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Operation <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Price <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Amount <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Total amount <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Transactions <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Status <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td class="red">Sell</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                            <td>Expect</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <nav class="pagination-wrapper" aria-label="navigation">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                        <span class="b-icon b-icon-dubble_arr_l"></span>
+                                    </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                        <span class="b-icon b-icon-arr_l"></span>
+                                    </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                        <span class="b-icon b-icon-arr_r"></span>
+                                    </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                        <span class="b-icon b-icon-dubble_arr_r"></span>
+                                    </a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="total-posts">Total posts: 634</div>
+                                </nav>
+                            </div>
+                            <div class="tab-pane fade" id="pills-trade_orders" role="tabpanel" aria-labelledby="pills-trade_orders-tab">
+                                <table class="table" cellpadding="0" cellspacing="0" border="0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Time <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Operation <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Price <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Amount <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                            <th scope="col">Total amount <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td class="red">Sell</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>234576538457234</td>
+                                            <td>20-06-2018 23:23:54</td>
+                                            <td>Buy</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                            <td>34</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <nav class="pagination-wrapper" aria-label="navigation">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                        <span class="b-icon b-icon-dubble_arr_l"></span>
+                                    </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                        <span class="b-icon b-icon-arr_l"></span>
+                                    </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                        <span class="b-icon b-icon-arr_r"></span>
+                                    </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                        <span class="b-icon b-icon-dubble_arr_r"></span>
+                                    </a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="total-posts">Total posts: 634</div>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
