@@ -1655,34 +1655,9 @@
     </div>
     <!-- Modal withdraw END -->
 
-    <!-- Modal Log-in -->
-    <div class="modal fade login_modal" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">LOG IN</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="b-icon-close b-icon" aria-hidden="true"></span>
-        </button>
-                </div>
-                <div class="modal-body">
-                    <div class="form_wrapper">
-                        <form action="">
-                            <input class="form-control" type="text" placeholder="Your e-mail">
-                            <input class="form-control" type="text" placeholder="Password">
-                            <button class="btn login-btn" type="submit">Log In</button>
-                            <div class="form-span__wrapper">
-                                <a href="#">Forget password?</a>
-                                <a href="registration.html">Registration</a>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal Log-in END -->
+    <!-- Modal Log-in include -->
+        <div id="modal_login"></div>
+    <!-- /Modal Log-in include -->
 
     <script src="js/jquery-3.1.1.min.js"></script>
 
@@ -1694,13 +1669,6 @@
 
     <script src="js/custom_scrollbar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script>
-        $(".list").mCustomScrollbar({
-            theme: "dark-3",
-            scrollInertia: 200
-        });
-        
-    </script>
     <script>
         var ctx = document.getElementById("myChart");
         var myChart = new Chart(ctx, {

@@ -1,4 +1,12 @@
 $("header").load("header.html");
+$("#modal_login").load("modal_login.html");
+
+
+/* ScrollBar include */
+$(".list").mCustomScrollbar({
+    theme: "dark-3",
+    scrollInertia: 200
+});
 
 $(document).ready(function () {
     // Select money

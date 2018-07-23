@@ -1,4 +1,4 @@
-@import "mixins";
+@import "mixins"; 
 
 /* Font for HEADER */
 @font-face {
@@ -189,6 +189,34 @@ header {
     }
 }
 
+.header-select {
+    @include d-flex;
+    justify-content: space-around;
+    padding: 0 10px;
+
+    .item {
+        padding: 15px 5px;
+        border-bottom: solid 2px transparent;
+        margin-bottom: -2px;
+        color: #395C86;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+        z-index: 1;
+
+        &:hover {
+            color: rgba(53, 125, 221, 0.7);
+            border-color: rgba(53, 125, 221, 0.5);
+        }
+    }
+
+    .item.selected {
+        color: #357DDD;
+        border-color: #357DDD;
+    }
+}
+
 
 
 
@@ -304,6 +332,14 @@ header {
 */
 
 @import 'sec-center-4'; 
+
+/*
+================================================================================
+|                                  page_orders                                 |
+================================================================================
+*/
+
+@import 'page_orders'; 
 
 /*
 ================================================================================

@@ -6,142 +6,259 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Orders</title>
 
-
-    <!-- bootstrap.min.css -- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-
-    <!-- custom_scrollbars -->
-    <link rel="stylesheet" href="css/custom_scrollbar.css">
-
-    <!-- main CSS -->
     <link href="css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
 
 
     <div class="main-wrapper">
+        <!-- header include -->
         <header></header>
+        <!-- /header include -->
 
         <main class="main-content">
-            <h1 style="padding: 20px">Orders</h1>
+            <div class="orders-wrapper">
+                <h1 class="page-header">Orders</h1>
+
+                <div class="js-header-select header-select">
+                    <div class="item selected">BTC / USD</div>
+                    <div class="item">LTC / USD</div>
+                    <div class="item">DASH / USD</div>
+                    <div class="item">ETH / USD</div>
+                    <div class="item">EDR / USD</div>
+                    <div class="item">EDR / BTC</div>
+                    <div class="item">EDR / LTC</div>
+                    <div class="item">EDR / DASH</div>
+                    <div class="item">EDR / ETH</div>
+                    <div class="item">EDR / IDR</div>
+                    <div class="item">BTC / IDR</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="js-header-select header-select second">
+                            <div class="item selected">Active orders</div>
+                            <div class="item">history orders</div>
+                            <div class="item">Trade</div>
+                        </div>
+
+                        <table class="table" cellpadding="0" cellspacing="0" border="0">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                    <th scope="col">Time <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                    <th scope="col">Operation <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                    <th scope="col">Price <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                    <th scope="col">Amount <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                    <th scope="col">Total amount <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                    <th scope="col">Transactions <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                    <th scope="col">Status <span class="b-icon b-icon-arrow_down desc"></span></th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>234576538457234</td>
+                                    <td>20-06-2018 23:23:54</td>
+                                    <td>Buy</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>0</td>
+                                    <td>Expect</td>
+                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>234576538457234</td>
+                                    <td>20-06-2018 23:23:54</td>
+                                    <td class="red">Sell</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>0</td>
+                                    <td>Expect</td>
+                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>234576538457234</td>
+                                    <td>20-06-2018 23:23:54</td>
+                                    <td>Buy</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>0</td>
+                                    <td>Expect</td>
+                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>234576538457234</td>
+                                    <td>20-06-2018 23:23:54</td>
+                                    <td>Buy</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>0</td>
+                                    <td>Expect</td>
+                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>234576538457234</td>
+                                    <td>20-06-2018 23:23:54</td>
+                                    <td>Buy</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>0</td>
+                                    <td>Expect</td>
+                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>234576538457234</td>
+                                    <td>20-06-2018 23:23:54</td>
+                                    <td>Buy</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>0</td>
+                                    <td>Expect</td>
+                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>234576538457234</td>
+                                    <td>20-06-2018 23:23:54</td>
+                                    <td>Buy</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>0</td>
+                                    <td>Expect</td>
+                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>234576538457234</td>
+                                    <td>20-06-2018 23:23:54</td>
+                                    <td>Buy</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>0</td>
+                                    <td>Expect</td>
+                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>234576538457234</td>
+                                    <td>20-06-2018 23:23:54</td>
+                                    <td>Buy</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>0</td>
+                                    <td>Expect</td>
+                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>234576538457234</td>
+                                    <td>20-06-2018 23:23:54</td>
+                                    <td>Buy</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>0</td>
+                                    <td>Expect</td>
+                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>234576538457234</td>
+                                    <td>20-06-2018 23:23:54</td>
+                                    <td>Buy</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>0</td>
+                                    <td>Expect</td>
+                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>234576538457234</td>
+                                    <td>20-06-2018 23:23:54</td>
+                                    <td>Buy</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>0</td>
+                                    <td>Expect</td>
+                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>234576538457234</td>
+                                    <td>20-06-2018 23:23:54</td>
+                                    <td>Buy</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>0</td>
+                                    <td>Expect</td>
+                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>234576538457234</td>
+                                    <td>20-06-2018 23:23:54</td>
+                                    <td>Buy</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>34</td>
+                                    <td>0</td>
+                                    <td>Expect</td>
+                                    <td class="close"><span class="b-icon-close b-icon"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <nav aria-label="navigation">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span class="b-icon b-icon-dubble_arr_l"></span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span class="b-icon b-icon-arr_l"></span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span class="b-icon b-icon-arr_r"></span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span class="b-icon b-icon-dubble_arr_r"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
 
 
-    <!-- Modal Log-in -->
-    <div class="modal fade login_modal" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">LOG IN</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="b-icon-close b-icon" aria-hidden="true"></span>
-        </button>
-                </div>
-                <div class="modal-body">
-                    <div class="form_wrapper">
-                        <form action="">
-                            <input class="form-control" type="text" placeholder="Your e-mail">
-                            <input class="form-control" type="text" placeholder="Password">
-                            <button class="btn login-btn" type="submit">Log In</button>
-                            <div class="form-span__wrapper">
-                                <a href="#">Forget password?</a>
-                                <a href="">Registration</a>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal Log-in END -->
-
-    <!-- Modal Registration -->
-    <div class="modal fade registration_modal" id="registration_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="header_text">
-                        <h5>Registration</h5>
-                        <a href="#" class="">I already have an account</a>
-                    </div>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="b-icon-close b-icon" aria-hidden="true"></span> 
-        </button>
-                </div>
-                <div class="modal-body">
-                    <div class="form_wrapper">
-                        <form action="">
-                            <div class="input_wrapper">
-                                <label for="registration-e-mail">E-mail</label>
-                                <input class="form-control" id="registration-e-mail" type="text" placeholder="Your e-mail">
-                            </div>
-                            <div class="input_wrapper">
-                                <label for="registration-login">Login</label>
-                                <input class="form-control" id="registration-login" type="text" placeholder="Please, enter your login">
-                            </div>
-                            <div class="input_wrapper">
-                                <label for="registration-confirmation">Confirmation code</label>
-                                <div class="input-group">
-                                    <input class="form-control confirm" id="registration-confirmation" type="text" placeholder="Enter received code">
-                                    <div class="input-group-append">
-                                        <a href="#" class="input-group-text">Send</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="input_wrapper">
-                                <label for="registration-password">Password</label>
-                                <input class="form-control" id="registration-password" type="password" placeholder="Password">
-                            </div>
-                            <div class="input_wrapper">
-                                <label for="registration-confirm_password">Confirm password</label>
-                                <input class="form-control" id="registration-confirm_password" type="password" placeholder="Password">
-                            </div>
-                            <div class="input_wrapper">
-                                <label for="registration-transaction">Transaction password</label>
-                                <input class="form-control" id="registration-transaction" type="text" placeholder="6-16 symbols, letters and numbers">
-                            </div>
-                            <div class="input_wrapper">
-                                <label for="registration-confirm-transaction">Confirm transaction password</label>
-                                <input class="form-control" id="registration-confirm-transaction" type="text" placeholder="6-16 symbols, letters and numbers">
-                            </div>
-                            <div class="checkbox_wrapper">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" id="registration_checkbox" class="custom-control-input">
-                                    <label for="registration_checkbox" class="custom-control-label">I'm agree</label>
-                                </div>
-                            </div>
-                            <div class="button_wrapper">
-                                <button class="btn login-btn" type="submit">Confirm registration</button>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal Registration END -->
+    <!-- Modal Log-in include -->
+    <div id="modal_login"></div>
+    <!-- /Modal Log-in include -->
 
     <script src="js/jquery-3.1.1.min.js"></script>
-
-    <!--     bootstrap.min.js -- Latest compiled and minified JavaScript -->
     <script src="bootstrap/bootstrap.min.js"></script>
-
-    <!-- popper.min.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-
     <script src="js/custom_scrollbar.min.js"></script>
-    <script>
-        $(".list").mCustomScrollbar({
-            theme: "dark-3",
-            scrollInertia: 200
-        });
-
-    </script>
 
     <!-- main JS -->
     <script src="js/main.js"></script>
