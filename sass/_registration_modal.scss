@@ -1,4 +1,4 @@
-.registration_modal {
+.registration_wrapp {
     color:#395c86;
     font-size: 0.93rem;
     font-weight: 500;
@@ -8,16 +8,18 @@
         margin-top: 0;
     }
     
-    .modal-content {
+    .registration-content {
+        max-width: 600px;
+        margin: 0 auto;
         border: none;
         background-color: transparent;
     }
     
-    .modal-body {
+    .registration-body {
         padding: 2.5rem 3.57142857rem .5rem 3.57142857rem;
     }
     
-    .modal-header {
+    .registration-header {
         @include align-items(center);
         background-color: transparent;
         border-bottom: solid 2px #1b2f4a;

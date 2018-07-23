@@ -402,7 +402,35 @@
     .modal-body-top {
         border-bottom-color: #e1e6ea!important;
     }
+    
+    /*
+================================================================================
+|                                    REGISTRATION                              |
+================================================================================
+*/
 
+    .registration_wrapp {
+        .registration-header {
+            border-bottom-color: #d8e2ef;
+            
+            .header_text {
+                h5 {
+                    color: #61768b;
+                }
+            }
+        }  
+        
+        .input-group-text {
+            border-color: #d8e2ef!important;
+        }
+        
+        .custom-control-label {
+            &::before {
+                border-color: #d8e2ef!important;
+                background-color: #f6f9fc !important;
+            }
+        }
+    }
     
 }
 
