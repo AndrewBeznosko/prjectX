@@ -9,24 +9,16 @@ $(".list").mCustomScrollbar({
 });
 
 $(document).ready(function () {
-    // Select money
-    $("#js-select-money .item").each(function () {
-        $(this).click(function () {
-            $(this).addClass("selected").siblings().removeClass("selected");
+    // Universal select header
+    $(".js-header-select").each(function () {
+        $(this).find(".item").each(function () {
+            $(this).click(function () {
+                $(this).addClass("selected").siblings().removeClass("selected");
+            });
         });
     });
 
-    $("#js-chart_tab .item").each(function () {
-        $(this).click(function () {
-            $(this).addClass("selected").siblings().removeClass("selected");
-        });
-    });
-
-    $("#js-left-settings .tab").each(function () {
-        $(this).click(function () {
-            $(this).addClass("selected").siblings().removeClass("selected");
-        });
-    });
+    
     /* sec-left bookmark check */
     $(".bookmark").each(function () {
         $(this).click(function () {
@@ -60,7 +52,8 @@ $(document).ready(function () {
         });
 
     });
-
+    
+    /* Choose theme */
     $("#switch_theme").click(function () {
         $("body").toggleClass("light_theme");
         $(this).children("span").toggleClass("b-icon-Sun b-icon-moon");
